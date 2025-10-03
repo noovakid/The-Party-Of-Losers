@@ -299,6 +299,88 @@ EXT 2,2 1 13,13 DLG k
 PAL 0
 AVA h
 
+ROOM f
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,4p,4q,4q,4r,0,0,0,0,0,0
+0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
+0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,62,61,64,62,61,64,62,61,64,0,4s,0,0
+0,0,4t,67,65,68,67,65,68,67,65,68,0,4s,0,0
+0,0,4t,0,66,0,0,66,0,0,66,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Warrior Cave 
+PAL 0
+AVA i
+
+ROOM g
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,1q,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,1v,1p,0,0,0,0,0,0,0,23,28,0,0,2a,0
+0,1u,1r,0,0,0,0,0,0,0,24,26,0,2f,2e,0
+0,1t,1s,0,0,0,5k,0,0,0,25,27,0,0,2c,0
+2h,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2i
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Character Select (Menos Guerreiro) 
+PAL 0
+
+ROOM h
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,4p,4q,4q,4r,0,0,0,0,0,0
+0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
+0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Warrior Cave 2
+PAL 0
+AVA i
+
+ROOM i
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,23,28,0,0,2a,0
+0,0,0,0,0,0,0,0,0,0,24,26,0,2f,2e,0
+0,0,5j,0,0,0,5k,0,0,0,25,27,0,0,2c,0
+2h,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2i
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Character Select (Menos Mago, Guerreiro) 
+PAL 0
+
 TIL 10
 01111000
 01100000
@@ -768,7 +850,7 @@ TIL 55
 NAME Leo5
 
 TIL 56
-11111111
+11111110
 11111111
 11111111
 11100001
@@ -837,6 +919,147 @@ TIL 60
 00000100
 00000010
 00000001
+NAME FencingDuelistDead5
+
+TIL 61
+00000000
+00011100
+00111110
+11111111
+11111111
+00111100
+00111100
+00011000
+>
+00000000
+00000000
+00011100
+00111100
+11111111
+11111111
+00111100
+00111100
+NAME Goblin1
+
+TIL 62
+00000000
+00000000
+00000000
+00000000
+00000011
+00000000
+00000000
+00000000
+>
+00000000
+00000000
+00000010
+00000001
+00000000
+00000000
+00000000
+00000000
+NAME Goblin2
+
+TIL 64
+00000000
+00000000
+00000000
+11100000
+10000000
+00000000
+00000000
+00000000
+>
+00000000
+00100000
+01000000
+11000000
+10000000
+00000000
+00000000
+00000000
+NAME Goblin3
+
+TIL 65
+00011000
+00111100
+01111110
+11111111
+10111101
+00111100
+00111100
+00000000
+>
+00011000
+00011000
+00111100
+01111110
+11111111
+10111101
+00111100
+00111100
+NAME Goblin4
+
+TIL 66
+00111100
+01111110
+01100110
+01100110
+01100110
+00100100
+01100110
+00000000
+>
+00000000
+00111100
+01111110
+01100110
+01100110
+00100100
+01100110
+00000000
+NAME Goblin5
+
+TIL 67
+00000000
+00000000
+00000000
+00000000
+00000001
+00000011
+00000100
+00000000
+>
+00000000
+00000000
+00000000
+00000000
+00000000
+00000001
+00000011
+00000100
+NAME Goblin6
+
+TIL 68
+00000000
+00000000
+00000000
+00000000
+10000000
+11000000
+00100000
+00000000
+>
+00000000
+00000000
+00000000
+00000000
+00000000
+10000000
+11000000
+00100000
+NAME Goblin7
 
 TIL b
 01100010
@@ -2465,6 +2688,7 @@ TIL 5w
 00110100
 00000000
 00000000
+NAME FencingDuelistDead1
 
 TIL 5x
 00000000
@@ -2475,6 +2699,7 @@ TIL 5x
 10111111
 00000110
 00000111
+NAME FencingDuelistDead2
 
 TIL 5y
 00000000
@@ -2485,6 +2710,7 @@ TIL 5y
 01111111
 00000000
 00000000
+NAME FencingDuelistDead3
 
 TIL 5z
 10000000
@@ -2495,6 +2721,105 @@ TIL 5z
 00000100
 00001010
 00000001
+NAME FencingDuelistDead4
+
+SPR 10
+00111000
+01000100
+01000100
+00000100
+00011000
+00010000
+00000000
+00010000
+POS f 8,2
+
+SPR 11
+00010000
+00111000
+00111000
+00111000
+00111000
+01111100
+00010000
+00010000
+NAME WarriorGoblinAttack
+DLG a
+POS f 3,6
+
+SPR 12
+00000000
+00111110
+01111111
+01010101
+01111111
+00111110
+01100000
+10000000
+NAME Warrior_Goblin_talk
+DLG p
+POS f 12,6
+
+SPR 13
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME Mage_Warrior_Dead
+DLG o
+POS g 2,9
+
+SPR 14
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArcChar2
+POS g 10,9
+
+SPR 15
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME Healer_Warrior_Dead
+POS g 14,9
+
+SPR 16
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME Healer_Mage_Warrior_Dead
+POS i 14,9
+
+SPR 17
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME Arch_Warrior_Mage_Dead
+POS i 10,9
 
 SPR A
 00000000
@@ -2514,7 +2839,7 @@ SPR A
 01000010
 00111100
 00000000
-POS b 3,7
+POS 5 1,0
 
 SPR b
 00000000
@@ -2627,6 +2952,7 @@ SPR i
 11010000
 01001000
 NAME WarriorChar
+DLG n
 POS 5 6,9
 
 SPR j
@@ -2638,7 +2964,7 @@ SPR j
 00010100
 00001000
 00010000
-NAME ArchChar
+NAME Arch_Warrior_Dead
 POS 5 10,9
 
 SPR k
@@ -2734,6 +3060,7 @@ SPR r
 11010000
 01001000
 NAME Warrior_Mage_Dead
+DLG m
 POS 8 6,9
 
 SPR s
@@ -2870,7 +3197,6 @@ ITM 0
 00011000
 00000000
 NAME tea
-DLG 1
 
 ITM 1
 00000000
@@ -2882,7 +3208,6 @@ ITM 1
 00010000
 00011000
 NAME key
-DLG 2
 BLIP 2
 
 ITM 2
@@ -2896,13 +3221,27 @@ ITM 2
 01001000
 NAME Sword
 
-DLG 1
-You found a nice warm cup of tea
-NAME tea dialog
+ITM 3
+00000000
+00000000
+01111100
+01010100
+01111100
+00111000
+00000000
+00000000
+NAME MageDeath
 
-DLG 2
-A key! {wvy}What does it open?{wvy}
-NAME key dialog
+ITM 4
+00000000
+00000000
+01111100
+01010100
+01111100
+00111000
+00000000
+00000000
+NAME WarriorDeath
 
 DLG 3
 Era uma vez, em um reino distante, um Rei aflito.{pg}Sua filha, a princesa, estava terrivelmente doente{pg}{exit "2" 5 2 "tunnel"}
@@ -2929,12 +3268,22 @@ Você, Mago que nunca conseguiu lançar feitiço, será o líder do grupo!{pg}{e
 NAME MageChar dialog
 
 DLG 9
-Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o nome de uma magia inventada na hora e… nada acontece. O leão só olha, confuso. Então, num ato desesperado, o mago pega uma pedrinha do chão e joga no leão. A pedra quica na juba dele sem causar nenhum dano.{pg}Mas o leão se sente ofendido e morde ferozmente o Mago{pal "2"}{exit "Character Select (Menos Mago)" 0 0 "fade_b"}O Mago morreu{pg}Agora outro aventureiro inexperiente deve ser o líder{Mage = 0}
+"""
+Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o nome de uma magia inventada na hora e… nada acontece. O leão só olha, confuso. Então, num ato desesperado, o mago pega uma pedrinha do chão e joga no leão. A pedra quica na juba dele sem causar nenhum dano.{pg}Mas o leão se sente ofendido e morde ferozmente o Mago{pal "2"}O Mago morreu{pg}Agora outro aventureiro inexperiente deve ser o líder{item "3" {{item "3"} + 1}}{pg}{
+  - {item "3"} == 1 ?
+    {
+      - {item "4"} == 1 ?
+        {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+      - {item "4"} == 0 ?
+        {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+    }
+}
+"""
 NAME Attack_Mage1 dialog
 
 DLG a
-O mago começa a tagarelar nervosamente sobre qualquer coisa.{pg} O leao, em vez de atacar, fica tao confuso que acaba se deitando e bocejando, como se estivesse ouvindo a história mais chata do mundo.{pg} Enquanto isso, uma passagem secreta atrás dele se abre sozinha! Aparentemente, a caverna só precisava de alguém que conseguisse entediar um leao até ele sair do caminho.{pg}Parabéns! Você venceu usando a arma mais poderosa do mago: {wvy}conversa fiada.{/wvy}{pg}{exit "Mage Cave Passed 1" 12 9}
-NAME Leo_Mage_Chat_1 dialog
+Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 7 2 "tunnel"}
+NAME Warrior_Goblin_1_Attack
 
 DLG b
  
@@ -2998,8 +3347,54 @@ DLG l
 ...{exit "c" 12 6 "fade_w"}
 NAME CaveMagePassed2 dialog
 
-VAR a
-42
+DLG m
+Você, Guerreiro dispensado por ser gordo demais, será o novo líder do grupo!{pg}{exit "Warrior Cave " 7 2 "tunnel"}
+NAME Warrior_Mage_Dead dialog
+
+DLG n
+Você, Guerreiro que foi dispensado por ser gordo demais, será o líder do grupo!{pg}{exit "Warrior Cave " 7 2 "tunnel"}
+NAME WarriorChar dialog
+
+DLG o
+Você, Mago que nunca soltou magia, será o novo líder do grupo!{pg}{exit "Mage Cave" 7 2 "tunnel"}
+NAME Mage_Warrior_Dead dialog
+
+DLG p
+"""
+O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado. {pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estão virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{pal "2"}{pg}{item "4" {{item "4"} + 1}}{
+  - {item "3"} == 1 ?
+    {
+      - {item "4"} == 1 ?
+        {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}{exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+    }
+  - else ?
+    {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+}
+"""
+NAME Warrior_Goblin_talk dialog
+
+DLG q
+"""
+{
+  - {item "2"} >= 1 ?
+    {property locked false}"Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{pg}{exit "Mage Cave 3  copy 1" 11 7 "fade_w"}{pg}Ninguém sabe exatamente como o Mago conseguiu derrotar o guerreiro misterioso.{pg}Mas ele conseguiu{pg}{exit "Mage Ending" 0 0 "tunnel"}Após sua jornada para sair da caverna, o Mago descobriu uma coisa...{pg}Ele era um péssimo mago, mas era um ótimo guerreiro{pg}Desde então, o Mago se dedicou a aprender a usar uma espada{pg}E ser o bom guerreiro que ele nasceu pra ser
+  - else ?
+    {property locked true}"Enfrente-me se for capaz!" O mago, desesperado, tenta soltar uma magia... que nao funcinou denovo. E entao foi empalado vivo pelo sabre do duelista{pal "2"}O Mago morreu{exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+}{pg}
+"""
+
+DLG r
+"""
+{
+  - {item "3"} >= 1 ?
+    {property locked false}"Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{pg}{exit "Mage Cave 3  copy 1" 11 7 "fade_w"}{pg}Ninguém sabe exatamente como o Mago conseguiu derrotar o guerreiro misterioso.{pg}Mas ele conseguiu{pg}{exit "Mage Ending" 0 0 "tunnel"}Após sua jornada para sair da caverna, o Mago descobriu uma coisa...{pg}Ele era um péssimo mago, mas era um ótimo guerreiro{pg}Desde então, o Mago se dedicou a aprender a usar uma espada{pg}E ser o bom guerreiro que ele nasceu pra ser
+  - else ?
+    {property locked true}"Enfrente-me se for capaz!" O mago, desesperado, tenta soltar uma magia... que nao funcinou denovo. E entao foi empalado vivo pelo sabre do duelista{pal "2"}O Mago morreu{exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+}{pg}
+"""
+
+VAR Morte
+0
 
 TUNE 1
 3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
