@@ -3103,6 +3103,7 @@ SPR 19
 01100000
 11000000
 NAME A lâmina
+DLG u
 POS k 6,7
 
 SPR A
@@ -3711,6 +3712,20 @@ DLG t
 }
 """
 NAME A Chama dialog
+
+DLG u
+"""
+"Você escolheu a arma" Disse o Rei Sapo{pg}"É a escolha daquele que opta a violência. Se esta é tua escolha, que assim seja"{pg}O Rei Sapo levita a lâmina e atinge o Guerreiro, o matando.{item "4" {{item "4"} + 1}}{
+  - {item "4"} == 1 ?
+    {
+      - {item "3"} == 1 ?
+        {exit "Character Select (Menos Mago, Guerreiro) " 0 0}
+      - {item "3"} == 0 ?
+        {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+    }
+}
+"""
+NAME A lâmina dialog
 
 VAR Morte
 0
