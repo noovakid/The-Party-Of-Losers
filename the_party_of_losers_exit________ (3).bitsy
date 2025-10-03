@@ -43,6 +43,8 @@ ROOM 1
 0,0,c,d,0,0,0,0,0,0,0,0,e,b,0,0
 0,0,c,d,0,0,0,0,0,0,0,0,e,b,0,0
 0,o,n,m,0,0,0,0,0,0,0,0,j,k,l,0
+EXT 13,13 c 10,7
+EXT 13,13 c 2,2
 PAL 0
 TUNE 6
 
@@ -216,9 +218,9 @@ ROOM a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,23,28,0,0,2a,0
-0,0,0,0,0,0,0,0,0,0,24,26,0,2f,2e,0
-0,0,5j,0,0,0,5k,0,0,0,25,27,0,0,2c,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,5j,0,0,0,5k,0,0,0,5n,0,0,5o,0,0
 2h,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2g,2i
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -238,9 +240,9 @@ ROOM b
 0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
@@ -248,6 +250,52 @@ ROOM b
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Mage Cave 2 
+PAL 0
+AVA h
+
+ROOM c
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,3m,3m
+0,0,4t,0,0,0,0,0,5p,0,0,0,0,0,0,0
+0,0,4t,0,0,0,0,0,5q,5u,0,0,0,0,0,0
+0,0,4t,0,0,0,0,0,5r,0,0,0,0,4p,3m,3m
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Mage Cave 3 
+EXT 10,7 1 13,13 FX tunnel DLG i
+EXT 2,2 1 13,13 DLG k
+PAL 0
+AVA h
+
+ROOM e
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,3m,3m
+0,0,4t,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,4t,0,0,0,0,60,5y,5x,5w,0,0,0,0,0
+0,0,4t,0,0,0,0,0,5z,0,0,0,0,4p,3m,3m
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Mage Cave 3  copy 1
+EXT 10,7 1 13,13 FX tunnel DLG i
+EXT 2,2 1 13,13 DLG k
 PAL 0
 AVA h
 
@@ -779,6 +827,16 @@ TIL 59
 01111110
 01100110
 10000001
+
+TIL 60
+00000000
+00000000
+00000000
+00000000
+00000000
+00000100
+00000010
+00000001
 
 TIL b
 01100010
@@ -1746,6 +1804,8 @@ TIL 3m
 00000000
 00000000
 00000000
+NAME Block1
+WAL true
 
 TIL 3n
 11111111
@@ -2321,6 +2381,121 @@ TIL 5m
 00000000
 NAME CHHHHest
 
+TIL 5n
+00000000
+00000100
+00001010
+00001000
+00000110
+10000001
+01000010
+00111100
+
+TIL 5o
+00000000
+00000000
+00000000
+00000000
+00000000
+01100110
+11111111
+00011000
+
+TIL 5p
+00000000
+00000000
+00111100
+00111110
+00100000
+01101110
+00101110
+01101100
+NAME FencingDuelist1
+
+TIL 5q
+00001100
+00110011
+01111111
+11011110
+11001110
+10001110
+01011110
+00000010
+NAME FencingDuelist2
+
+TIL 5r
+00111100
+00110110
+01100011
+01100011
+01100010
+11000011
+00000000
+00000000
+NAME FencingDuelist3
+
+TIL 5u
+00000101
+11111010
+11110101
+00001000
+00000000
+00000000
+00000000
+00000000
+NAME FencingDuelist4
+
+TIL 5v
+00000000
+00000000
+00000100
+00001000
+00010000
+00100000
+01000000
+10000000
+NAME FencingDuelist5
+
+TIL 5w
+10100000
+11111110
+00000110
+11110110
+11110110
+00110100
+00000000
+00000000
+
+TIL 5x
+00000000
+00000000
+11101111
+11001110
+10011110
+10111111
+00000110
+00000111
+
+TIL 5y
+00000000
+00000000
+00000000
+00000000
+00011111
+01111111
+00000000
+00000000
+
+TIL 5z
+10000000
+01000000
+00100000
+00010000
+00001010
+00000100
+00001010
+00000001
+
 SPR A
 00000000
 00111100
@@ -2339,7 +2514,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 1 7,15
+POS 1 4,1
 
 SPR b
 00000000
@@ -2617,7 +2792,72 @@ SPR v
 00000000
 NAME SwordChest
 DLG e
-POS b 8,9
+POS b 8,8
+
+SPR w
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME Healer_Dead_Mage
+POS 8 14,9
+
+SPR x
+00000000
+00111110
+01111111
+01010101
+01111111
+00111110
+01100000
+10000000
+
+SPR y
+00000000
+01000010
+11100100
+01001000
+00010000
+00100010
+01000111
+10000010
+>
+00001000
+00011110
+00001100
+00001000
+00010000
+00101000
+01011100
+10001000
+NAME FencingSword
+DLG k
+
+SPR z
+00000000
+00100000
+00100000
+00100000
+11111000
+00100010
+00100111
+00000010
+>
+00000000
+00000000
+00000100
+00000100
+00001110
+01000100
+11100100
+01000000
+NAME CaveMagePassed2
+DLG l
+POS b 2,7
 
 ITM 0
 00000000
@@ -2643,6 +2883,17 @@ ITM 1
 NAME key
 DLG 2
 BLIP 2
+
+ITM 2
+00000000
+00000000
+00000011
+00000110
+01001100
+00111000
+00110000
+01001000
+NAME Sword
 
 DLG 1
 You found a nice warm cup of tea
@@ -2699,8 +2950,52 @@ DLG d
 NAME CaveMagePassed1 dialog
 
 DLG e
-Você encontrou a arma perfeita para um mago:{pg}{wvy}Uma espada!{/wvy}
+Você encontrou a arma perfeita para um mago:{pg}{wvy}Uma espada!{/wvy}{item "2" {{item "2"} + 1}}{exit "Mage Cave 3 " 14 7 "tunnel"}
 NAME SwordChest dialog
+
+DLG f
+"""
+{
+  - {item "1"} >= 1 ?
+    {property locked false}
+    The key opens the door!
+  - else ?
+    {property locked true}
+    The door is locked...
+}
+"""
+NAME locked exit 1
+
+DLG g
+You walk through the doorway
+NAME exit narration 1
+
+DLG h
+You walk through the doorway
+NAME exit narration 2
+
+DLG i
+You walk through the doorway
+NAME exit narration 3
+
+DLG j
+
+NAME FencingSword dialog
+
+DLG k
+"""
+{
+  - {item "2"} >= 1 ?
+    {property locked false}"Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{pg}{exit "Mage Cave 3  copy 1" 11 7 "fade_w"}{pg}Ninguém sabe exatamente como o Mago conseguiu derrotar o guerreiro misterioso.{pg}Mas ele conseguiu{pg}{exit "Mage Ending" 0 0 "tunnel"}Após sua jornada para sair da caverna, o Mago descobriu uma coisa...{pg}Ele era um péssimo mago, mas era um ótimo guerreiro{pg}Desde então, o Mago se dedicou a aprender a usar uma espada{pg}E ser o bom guerreiro que ele nasceu pra ser
+  - else ?
+    {property locked true}"Enfrente-me se for capaz!" O mago, desesperado, tenta soltar uma magia... que nao funcinou denovo. E entao foi empalado vivo pelo sabre do duelista{pal "2"}O Mago morreu{exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+}{pg}
+"""
+NAME FencingFight Dialog
+
+DLG l
+{exit "Mage Cave 3" 13 7 "tunnel"}
+NAME CaveMagePassed2 dialog
 
 VAR a
 42
