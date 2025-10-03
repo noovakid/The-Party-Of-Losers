@@ -381,6 +381,26 @@ ROOM i
 NAME Character Select (Menos Mago, Guerreiro) 
 PAL 0
 
+ROOM j
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+p,g,f,0,0,0,0,0,0,0,0,0,0,h,i,q
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,6i,6j,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,6i,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,6g,6h,0,6j,0,0,e,b,0
+0,c,d,0,0,6j,0,6c,6d,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,6e,6f,0,0,0,0,e,b,0
+0,c,d,0,0,0,4l,6b,6a,4m,0,0,0,e,b,0
+0,c,d,0,0,0,0,4k,4n,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,4k,4n,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,4k,4n,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,4k,4n,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,4k,4n,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,4k,4n,0,0,0,0,e,b,0
+o,n,m,0,0,0,0,4k,4n,0,0,0,0,j,k,l
+NAME Warrior Ending
+PAL 0
+
 TIL 10
 01111000
 01100000
@@ -2723,6 +2743,116 @@ TIL 5z
 00000001
 NAME FencingDuelistDead4
 
+TIL 6a
+01100000
+01000000
+00000000
+11111111
+11111111
+00000000
+01101000
+01101000
+NAME WarriorWin1
+
+TIL 6b
+00000110
+00000010
+00000000
+11111111
+11111111
+00000000
+00101110
+00101110
+NAME WarriorWin2
+
+TIL 6c
+00000000
+00000000
+00001000
+00011100
+00001001
+00000011
+00000011
+00000001
+NAME WarriorWin3
+
+TIL 6d
+00000000
+00000000
+00010000
+00111000
+10010000
+11000000
+11000000
+10000000
+NAME WarriorWin4
+
+TIL 6e
+00000100
+00000111
+00001111
+00001111
+00001111
+00001111
+00000111
+00000000
+NAME WarriorWin5
+
+TIL 6f
+00100000
+11110000
+11110000
+11110000
+11110000
+11110000
+11100000
+00000000
+NAME WarriorWin6
+
+TIL 6g
+00000000
+00000000
+00000100
+00000110
+00000101
+00000101
+00000011
+00000001
+NAME WarriorWin7
+
+TIL 6h
+00000000
+00000000
+00100000
+01100000
+10100000
+10100000
+11000000
+10000000
+NAME WarriorWin8
+
+TIL 6i
+00000000
+00000000
+00001000
+00011100
+00001000
+00000000
+00000000
+00000000
+NAME WarriorWin9
+
+TIL 6j
+00000000
+00001000
+00001000
+00111110
+00001000
+00001000
+00000000
+00000000
+NAME WarriorWin10
+
 SPR 10
 00111000
 01000100
@@ -3282,7 +3412,7 @@ Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o 
 NAME Attack_Mage1 dialog
 
 DLG a
-Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 7 2 "tunnel"}
+Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 7 2 "tunnel"}
 NAME Warrior_Goblin_1_Attack
 
 DLG b
