@@ -3365,7 +3365,7 @@ O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a 
   - {item "3"} == 1 ?
     {
       - {item "4"} == 1 ?
-        {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}{exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+        {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
     }
   - else ?
     {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
