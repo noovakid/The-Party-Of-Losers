@@ -1,4 +1,4 @@
-The Party Of Losers{exit "0" 0 0 "Tunnel"}
+The Party Of Losers
 
 # BITSY VERSION 8.14
 
@@ -2514,7 +2514,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 1 4,1
+POS b 3,7
 
 SPR b
 00000000
@@ -2836,6 +2836,7 @@ SPR y
 10001000
 NAME FencingSword
 DLG k
+POS c 10,7
 
 SPR z
 00000000
@@ -2994,7 +2995,7 @@ DLG k
 NAME FencingFight Dialog
 
 DLG l
-{exit "Mage Cave 3" 13 7 "tunnel"}
+...{exit "c" 12 6 "fade_w"}
 NAME CaveMagePassed2 dialog
 
 VAR a
