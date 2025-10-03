@@ -401,6 +401,27 @@ o,n,m,0,0,0,0,4k,4n,0,0,0,0,j,k,l
 NAME Warrior Ending
 PAL 0
 
+ROOM k
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,6s,0,0,0,0,0,0,0,0,0,0,0
+0,0,4t,6o,6k,6r,0,0,0,0,0,0,0,0,0,0
+0,0,4t,6n,6l,6q,0,0,0,0,0,0,0,0,0,0
+0,0,4t,0,6m,0,0,0,0,0,0,0,0,0,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Warrior Cave 2.2
+PAL 0
+AVA i
+
 TIL 10
 01111000
 01100000
@@ -3050,6 +3071,40 @@ SPR 17
 NAME Arch_Warrior_Mage_Dead
 POS i 10,9
 
+SPR 18
+00001000
+00001000
+01000110
+00100100
+01100110
+01011010
+01111110
+00111100
+>
+00000000
+00001010
+01010010
+10000001
+10001001
+01011011
+01111110
+00111100
+NAME A Chama
+DLG t
+POS k 6,5
+
+SPR 19
+00000001
+00000011
+00000101
+00001001
+00010110
+00111100
+01100000
+11000000
+NAME A lâmina
+POS k 6,7
+
 SPR A
 00000000
 00111100
@@ -3371,6 +3426,8 @@ SPR x
 00111110
 01100000
 10000000
+DLG s
+POS h 6,7
 
 SPR y
 00000000
@@ -3415,6 +3472,18 @@ SPR z
 NAME CaveMagePassed2
 DLG l
 POS b 2,7
+
+SPR 1a
+00000000
+00110000
+01111000
+10111000
+10011000
+11011000
+01110000
+00000000
+NAME A semente
+POS k 6,9
 
 ITM 0
 00000000
@@ -3621,6 +3690,27 @@ DLG r
     {property locked true}"Enfrente-me se for capaz!" O mago, desesperado, tenta soltar uma magia... que nao funcinou denovo. E entao foi empalado vivo pelo sabre do duelista{pal "2"}O Mago morreu{exit "Character Select (Menos Mago)" 0 0 "fade_b"}
 }{pg}
 """
+
+DLG s
+"""
+O Rei Sapo, com sua toda sua grandiosidade, te pergunta:{pg}"Três coisas vivem nesta caverna: a Chama, a Lâmina e a Semente.
+Cada uma pode ser protegida, mas apenas uma. Qual você escolhe salvar?"{exit "Warrior Cave 2.2" 7 7}
+"""
+NAME Rei Sapo Dialog
+
+DLG t
+"""
+"Você escolheu a chama" Disse o Rei Sapo{pg}"Mas luz sem vida é só fogo que consome. É a escolha de quem opta pelo caos"{pg}O Rei Sapo condena o Guerreiro o transformando em uma chama que queima eternamente{pg}E assim o Guerreiro virou uma chama e nunca mais saiu da caverna.{pal "2"}{item "4" {{item "4"} + 1}}{
+  - {item "4"} == 1 ?
+    {
+      - {item "3"} == 1 ?
+        {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+      - {item "3"} == 0 ?
+        {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+    }
+}
+"""
+NAME A Chama dialog
 
 VAR Morte
 0
