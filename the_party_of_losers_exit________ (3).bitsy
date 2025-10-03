@@ -3581,7 +3581,7 @@ Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o 
 NAME Attack_Mage1 dialog
 
 DLG a
-Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 7 2 "tunnel"}
+Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
 NAME Warrior_Goblin_1_Attack
 
 DLG b
