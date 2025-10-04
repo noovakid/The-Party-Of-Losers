@@ -3746,29 +3746,6 @@ SPR 1a
 NAME A semente
 POS k 6,9
 
-ITM 0
-00000000
-00000000
-00000000
-00111100
-01100100
-00100100
-00011000
-00000000
-NAME tea
-
-ITM 1
-00000000
-00111100
-00100100
-00111100
-00010000
-00011000
-00010000
-00011000
-NAME key
-BLIP 2
-
 ITM 2
 00000000
 00000000
@@ -3802,6 +3779,28 @@ ITM 4
 00000000
 NAME WarriorDeath
 
+ITM 5
+00000000
+00000000
+01111100
+01010100
+01111100
+00111000
+00000000
+00000000
+NAME HealerDeath
+
+ITM 6
+00000000
+00000000
+01111100
+01010100
+01111100
+00111000
+00000000
+00000000
+NAME ArchDeath
+
 DLG 3
 Era uma vez, em um reino distante, um Rei aflito.{pg}Sua filha, a princesa, estava terrivelmente doente{pg}{exit "2" 5 2 "tunnel"}
 NAME Story dialog1
@@ -3829,12 +3828,40 @@ NAME MageChar dialog
 DLG 9
 """
 Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o nome de uma magia inventada na hora e… nada acontece. O leão só olha, confuso. Então, num ato desesperado, o mago pega uma pedrinha do chão e joga no leão. A pedra quica na juba dele sem causar nenhum dano.{pg}Mas o leão se sente ofendido e morde ferozmente o Mago{pal "2"}O Mago morreu{pg}Agora outro aventureiro inexperiente deve ser o líder{item "3" {{item "3"} + 1}}{pg}{
-  - {item "3"} == 1 ?
+  - {item "MageDeath"} == 1 ?
     {
-      - {item "4"} == 1 ?
-        {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
-      - {item "4"} == 0 ?
-        {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+            }
+          - {item "WarriorDeath"} == 0 ?
+            {
+              - {item "ArchDeath"} == 0 ?
+                {
+                  - {item "HealerDeath"} == 1 ?
+                    {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+                }
+            }
+        }
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath1"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
     }
 }
 """
