@@ -3710,7 +3710,7 @@ SPR y
 01011100
 10001000
 NAME FencingSword
-DLG k
+DLG z
 POS c 10,7
 
 SPR z
@@ -4005,10 +4005,6 @@ DLG i
 You walk through the doorway
 NAME exit narration 3
 
-DLG j
-
-NAME FencingSword dialog
-
 DLG k
 """
 {
@@ -4112,6 +4108,317 @@ NAME ItemTEST dialog
 DLG w
 O mago começa a tagarelar nervosamente sobre qualquer coisa.{pg}O leao, em vez de atacar, fica tao confuso que acaba se deitando e bocejando, como se estivesse ouvindo a história mais chata do mundo.{pg}Enquanto isso, uma passagem secreta atrás dele se abre sozinha{pg}aparentemente, a caverna só precisava de alguém que conseguisse entediar um leao até ele sair do caminho.{pg}Parabéns! Você venceu usando a arma mais poderosa do mago:{pg}{wvy}conversa fiada.{/wvy}{pg}{exit "Mage Cave Passed 1" 12 9}
 NAME Leo_Dialog
+
+DLG x
+"""
+{item "3" {{item "3"} + 1}}{pg}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME Logica Morte
+
+DLG y
+"""
+Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o nome de uma magia inventada na hora e… nada acontece. O leão só olha, confuso. Então, num ato desesperado, o mago pega uma pedrinha do chão e joga no leão. A pedra quica na juba dele sem causar nenhum dano.{pg}Mas o leão se sente ofendido e morde ferozmente o Mago{pal "2"}O Mago morreu{pg}Agora outro aventureiro inexperiente deve ser o líder{item "3" {{item "3"} + 1}}{pg}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME FencingDeath
+
+DLG z
+"""
+{
+  - {item "Sword"} == 1 ?
+    "Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{exit "Mage Ending" 0 0 "fade_w"}
+  - {item "Sword"} == 0 ?
+     "Enfrente-me se for capaz!" Grita o duelista.{pg}Após o grito de guerra, o duelista acerta o Mago com sua espada{item "MageDeath" 1}
+}{pg}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME FencingDeathLgc
 
 VAR Morte
 0
