@@ -3385,6 +3385,9 @@ SPR A
 00111100
 00000000
 POS 6 7,2
+ITM 4 1
+ITM 5 1
+ITM 6 1
 
 SPR b
 00000000
@@ -3547,8 +3550,6 @@ SPR m
 01100000
 10000000
 NAME Leo_Mage_Chat_1
-DLG a
-POS 6 12,9
 
 SPR n
 10000001
@@ -3766,7 +3767,18 @@ SPR 1b
 01000000
 NAME ItemTEST
 DLG v
-POS 6 8,5
+
+SPR 1c
+00000000
+00111110
+01111111
+01010101
+01111111
+00111110
+01100000
+10000000
+DLG w
+POS 6 12,9
 
 ITM 2
 00000000
@@ -3859,15 +3871,23 @@ Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o 
               - {item "HealerDeath"} == 0 ?
                 {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
             }
-          - {item "WarriorDeath"} == 0 ?
-            {
-              - {item "ArchDeath"} == 0 ?
-                {
-                  - {item "HealerDeath"} == 1 ?
-                    {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
-                }
-            }
         }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
       - {item "WarriorDeath"} == 0 ?
         {
           - {item "ArchDeath"} == 1 ?
@@ -3876,12 +3896,64 @@ Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o 
                 {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
             }
         }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
       - {item "WarriorDeath"} == 0 ?
         {
           - {item "ArchDeath"} == 1 ?
             {
-              - {item "HealerDeath1"} == 1 ?
+              - {item "HealerDeath"} == 1 ?
                 {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
             }
         }
     }
@@ -3892,9 +3964,6 @@ NAME Attack_Mage1 dialog
 DLG a
 Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
 NAME Warrior_Goblin_1_Attack
-
-DLG b
- 
 
 DLG c
 """
@@ -4039,6 +4108,10 @@ NAME A lâmina dialog
 DLG v
 {item "HealerDeath" {{item "HealerDeath"} + 1}}
 NAME ItemTEST dialog
+
+DLG w
+O mago começa a tagarelar nervosamente sobre qualquer coisa.{pg}O leao, em vez de atacar, fica tao confuso que acaba se deitando e bocejando, como se estivesse ouvindo a história mais chata do mundo.{pg}Enquanto isso, uma passagem secreta atrás dele se abre sozinha{pg}aparentemente, a caverna só precisava de alguém que conseguisse entediar um leao até ele sair do caminho.{pg}Parabéns! Você venceu usando a arma mais poderosa do mago:{pg}{wvy}conversa fiada.{/wvy}{pg}{exit "Mage Cave Passed 1" 12 9}
+NAME Leo_Dialog
 
 VAR Morte
 0
