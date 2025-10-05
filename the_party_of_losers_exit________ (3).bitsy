@@ -3384,9 +3384,6 @@ SPR A
 00111100
 00000000
 POS f 7,3
-ITM 4 1
-ITM 5 1
-ITM 6 1
 
 SPR b
 00000000
@@ -3962,7 +3959,7 @@ NAME Attack_Mage1 dialog
 
 DLG 10
 """
-{item "4" {{item "4"} + 1}}O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado.{pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{
+O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado.{pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{item "4" {{item "4"} + 1}}{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{
   - {item "WarriorDeath"} == 1 ?
     {
       - {item "MageDeath"} == 0 ?
