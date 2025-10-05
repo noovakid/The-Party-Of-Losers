@@ -3266,7 +3266,7 @@ SPR 12
 01100000
 10000000
 NAME Warrior_Goblin_talk
-DLG p
+DLG 10
 POS f 12,6
 
 SPR 13
@@ -3383,7 +3383,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 1 8,14
+POS f 7,3
 ITM 4 1
 ITM 5 1
 ITM 6 1
@@ -3962,58 +3962,58 @@ NAME Attack_Mage1 dialog
 
 DLG 10
 """
-{item "3" {{item "3"} + 1}}{pg}{
-  - {item "MageDeath"} == 1 ?
+{item "4" {{item "4"} + 1}}O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado.{pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 0 ?
+      - {item "MageDeath"} == 0 ?
         {
           - {item "ArchDeath"} == 0 ?
             {
               - {item "HealerDeath"} == 0 ?
-                {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+                {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
             }
         }
     }
 }{
-  - {item "MageDeath"} == 1 ?
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 0 ?
+      - {item "MageDeath"} == 0 ?
 
     }{
       - {item "ArchDeath"} == 0 ?
         {
           - {item "HealerDeath"} == 1 ?
-            {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+            {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
         }
     }
 }{
-  - {item "MageDeath"} == 1 ?
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 0 ?
+      - {item "MageDeath"} == 0 ?
         {
           - {item "ArchDeath"} == 1 ?
             {
               - {item "HealerDeath"} == 0 ?
-                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
             }
         }
     }
 }{
-  - {item "MageDeath"} == 1 ?
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 0 ?
+      - {item "MageDeath"} == 0 ?
         {
           - {item "ArchDeath"} == 1 ?
             {
               - {item "HealerDeath"} == 1 ?
-                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
             }
         }
     }
 }{
-  - {item "MageDeath"} == 1 ?
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 1 ?
+      - {item "MageDeath"} == 1 ?
         {
           - {item "ArchDeath"} == 0 ?
             {
@@ -4023,9 +4023,9 @@ DLG 10
         }
     }
 }{
-  - {item "MageDeath"} == 1 ?
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 1 ?
+      - {item "MageDeath"} == 1 ?
         {
           - {item "ArchDeath"} == 0 ?
             {
@@ -4035,9 +4035,9 @@ DLG 10
         }
     }
 }{
-  - {item "MageDeath"} == 1 ?
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 1 ?
+      - {item "MageDeath"} == 1 ?
         {
           - {item "ArchDeath"} == 1 ?
             {
@@ -4047,9 +4047,9 @@ DLG 10
         }
     }
 }{
-  - {item "MageDeath"} == 1 ?
+  - {item "WarriorDeath"} == 1 ?
     {
-      - {item "WarriorDeath"} == 1 ?
+      - {item "MageDeath"} == 1 ?
         {
           - {item "ArchDeath"} == 1 ?
             {
@@ -4094,10 +4094,6 @@ DLG f
 """
 NAME locked exit 1
 
-DLG g
-You walk through the doorway
-NAME exit narration 1
-
 DLG h
 You walk through the doorway
 NAME exit narration 2
@@ -4135,7 +4131,7 @@ NAME Mage_Warrior_Dead dialog
 
 DLG p
 """
-O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado. {pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estão virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{pal "2"}{pg}{item "4" {{item "4"} + 1}}{
+O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado. {pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{pal "2"}{pg}{item "4" {{item "4"} + 1}}{
   - {item "3"} == 1 ?
     {
       - {item "4"} == 1 ?
