@@ -43,7 +43,6 @@ ROOM 1
 0,0,c,d,0,0,0,0,0,0,0,0,e,b,0,0
 0,0,c,d,0,0,0,0,0,0,0,0,e,b,0,0
 0,o,n,m,0,0,0,0,0,0,0,0,j,k,l,0
-EXT 13,13 c 10,7
 EXT 13,13 c 2,2
 PAL 0
 
@@ -271,7 +270,6 @@ ROOM c
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Mage Cave 3 
 EXT 10,7 1 13,13 FX tunnel DLG i
-EXT 2,2 1 13,13 DLG k
 PAL 0
 AVA h
 
@@ -679,6 +677,48 @@ ROOM x
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Character Select (Menos Mago, Guerreiro, Arqueira) copy 1
+PAL 0
+
+ROOM y
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,6t,6w,0,0,6z,0,4s,0,0
+0,0,4t,0,0,0,0,6u,0,0,0,0,0,4s,0,0
+0,0,4t,6x,6z,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,6y,0,0,0,0,0,0,6x,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,6y,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,6x,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4u,4w,4w,4w,0,0,0,0,4w,4w,4w,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Warrior Cave 3
+ITM 8 10,9
+PAL 0
+AVA i
+
+ROOM z
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+p,g,f,0,0,0,0,0,0,0,0,0,0,h,i,q
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+0,c,d,0,0,0,0,0,0,0,0,0,0,e,b,0
+o,n,m,0,0,0,0,0,0,0,0,0,0,j,k,l
+NAME Happy Ending
 PAL 0
 
 TIL 10
@@ -3232,6 +3272,94 @@ TIL 6s
 01111110
 00000000
 
+TIL 6t
+00000000
+00000000
+01111110
+11111111
+11000011
+10010001
+10010001
+10010001
+>
+00000000
+00000000
+00000000
+01111110
+11000011
+10001001
+10001001
+10001001
+
+TIL 6u
+10010001
+11000011
+11111111
+11111111
+11111111
+11000011
+10000001
+10000001
+>
+10001001
+11000011
+11111111
+11111111
+11111111
+11111111
+11000011
+10000001
+
+TIL 6v
+00000100
+00000100
+00000111
+00000110
+00000010
+00000000
+00000000
+00000000
+
+TIL 6w
+00100000
+00100000
+11100000
+01100000
+01000000
+00000000
+00000000
+00000000
+
+TIL 6x
+00000000
+00000000
+00000000
+00111100
+00111100
+00011000
+00111100
+00011000
+
+TIL 6y
+00000000
+00000000
+00001000
+00001100
+00010000
+01100000
+00100000
+00000000
+
+TIL 6z
+00000000
+00010000
+00110000
+00001000
+00000110
+00000100
+00000000
+00000000
+
 SPR 10
 00111000
 01000100
@@ -3741,6 +3869,7 @@ SPR 1a
 01110000
 00000000
 NAME A semente
+DLG 11
 POS k 6,9
 
 SPR 1b
@@ -3775,6 +3904,29 @@ SPR 1c
 10000000
 DLG w
 POS 6 12,9
+
+SPR 1d
+00000100
+00000100
+00000111
+00000110
+00000010
+00000000
+00000000
+00000000
+DLG 15
+POS y 6,4
+
+SPR 1e
+00000000
+00000000
+00000000
+00000000
+00111100
+00011000
+00111100
+00011000
+POS y 4,10
 
 ITM 2
 00000000
@@ -3830,6 +3982,38 @@ ITM 6
 00000000
 00000000
 NAME ArchDeath
+
+ITM 7
+01111111
+01000001
+01001001
+01011101
+01001001
+01000001
+01000001
+01111111
+NAME Grimório
+
+ITM 8
+01000011
+11100111
+01001110
+00011100
+00111000
+11110010
+01100111
+10100010
+>
+00100011
+01110111
+00101110
+00011100
+00111000
+11110100
+01101110
+10100100
+NAME MagicSword
+DLG 14
 
 DLG 3
 Era uma vez, em um reino distante, um Rei aflito.{pg}Sua filha, a princesa, estava terrivelmente doente{pg}{exit "2" 5 2 "tunnel"}
@@ -4058,6 +4242,228 @@ O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a 
 }
 """
 NAME GoblinDeathLgc
+
+DLG 11
+"Você escolheu a semente" Diz o Rei Sapo, com toda sua grandiosidade {pg}"Alguém com tanta luz em seu coração não merece a escuridão cruel desta caverna"{pg}O Rei Sapo abre uma passagem e concede ao Guerreiro um livro mágico {pg}Parabéns! Você recebeu "O Grimório Das Lambidas Milagrosas"{item "Grimório" {{item "Grimório"} + 1}}{exit "Warrior Cave 3" 7 13 "tunnel"}
+NAME A semente dialog
+
+DLG 12
+"""
+"Você escolheu a chama" Diz o Rei Sapo com uma cara de decepcionado{pg}"É a escolha de quem opta pelo caos. Uma alma tão caótica e perigosa não merece sair destas ruinas{pg}O Rei Sapo transforma o Guerreiro em uma chama que queima eternamente dentro da caverna.{item "4" {{item "4"} + 1}}{pg}E o Guerreiro nunca mais se encontrou com seus amigos{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME Sapo_Chama
+
+DLG 14
+Obteve: {wvy}Espada mágica{/wvy}
+NAME MagicSword dialog
+
+DLG 15
+"""
+{
+  - {item "MagicSword"} == 1 ?
+    O guerreiro se aproxima do monstro com uma espada mágica e ameaça a criatura.{pg}Mas o monstro é hipocondríaco e teme que exista alguma doença na espada{pg}Já que ela foi encontrada no chão de uma caverna suja.{pg}A criatura espirra de tanto nervosismo e contamina o Guerreiro com uma doença letal.{pg}E em poucos minutos o Guerreiro morre.
+}{pg}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "Grimório"} == 1 ?
+    "Opa, bom?" Pergunta o monstro{pg}"Por gentileza, poderia se afastar de mim? Não quero pegar nenhuma doença"{pg}...{pg}"Espera! Esse é aquele livro que uns caras legais usam pra curar as pessoas?"{pg}"Poderia me curar da minha gripe? Já estou com dor de cabeça!"{pg}O Guerreiro procura no Grimório folheira o grimório e encontra o capítulo "Cura para gripe de monstros que possuem um olho só perdidos dentro de uma caverna escura e suja"{pg}O Guerreiro consegue lançar um feitiço que cura o monstro de sua gripe.{pg}A criatura, grata por sua ajuda, te guia para a saída da caverna e assim o Guerreiro consegue guiar seus amigos para fora da caverna!{pg}{exit "Warrior Ending" 0 0 "fade_w"}O Guerreiro descobriu algo sobre si: {pg}Talvez ele nunca tenha sido um bom lutador, porque durante esse tempo todo ele era um ótimo cuidador{pg}Desde então o Guerreiro se dedicou a curar os mais necessitados com sua recém-aprendida magia!
+}
+"""
+NAME MonstroDialog
+
+DLG 16
+
+NAME sprite 1d dialog
 
 DLG a
 Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
