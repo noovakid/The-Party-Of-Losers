@@ -270,6 +270,7 @@ ROOM 13
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Arch Cave 2
 PAL 0
+AVA 1f
 
 ROOM 14
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -292,6 +293,7 @@ NAME Arch Cave 3
 ITM 9 4,6
 ITM a 11,6
 PAL 0
+AVA 1f
 
 ROOM a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -4096,7 +4098,7 @@ SPR A
 01000010
 00111100
 00000000
-POS f 7,3
+POS 12 7,2
 
 SPR b
 00000000
@@ -4521,6 +4523,7 @@ SPR 1e
 01111110
 00111100
 NAME fogo
+DLG 1a
 POS 12 9,11
 
 SPR 1f
@@ -4544,6 +4547,7 @@ SPR 1h
 00010000
 00010000
 NAME Attack_Arch_MimicLgc
+DLG 1c
 POS 12 4,9
 
 SPR 1i
@@ -5839,6 +5843,116 @@ DLG z
 }
 """
 NAME FencingDeathLgc
+
+DLG 1a
+A Arqueira olha para o {wvy}"alvo"{/wvy} suspeitosamente colocado no meio da caverna solitária{pg}Ela decide descansar na fogueira, pois o dia foi longo.{pg}Ao se sentar, seu arco fez um som melódico. {pg}A melodia diverte o mimico que pobremente se disfarça de alvo e o faz dançar para fora da caverna.{pg}Revelando uma passagem secreta atrás dele.{pg}Parabéns! Você ganhou usando o melhor poder da Arqueira:{pg}{wvy}TDAH{/wvy}{pg}{exit "Arch Cave 2" 7 2 "tunnel"}
+NAME Firewood_Arch_MimicLgc dialog
+
+DLG 1b
+
+NAME fogo dialog
+
+DLG 1c
+"""
+{item "6" {{item "6"} + 1}}{pg}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+
+    }{
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME Arch_Attack_Mimic
 
 VAR Morte
 0
