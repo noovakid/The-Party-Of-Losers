@@ -9,8 +9,8 @@ The Party Of Losers
 ! TXT_MODE 0
 
 PAL 0
-3,32,43
-196,196,196
+5,26,43
+149,167,255
 248,3,255
 NAME blueprint
 
@@ -229,6 +229,27 @@ p,g,f,0,0,0,0,0,0,0,0,0,0,h,i,q
 o,n,m,0,0,0,0,4k,4n,0,0,0,0,j,k,l
 NAME ArchEnding
 PAL 0
+
+ROOM 12
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,4p,4q,4q,4r,0,0,0,0,0,0
+0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
+0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,7f,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,7e,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,7d,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,7j,0,7k,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,7i,7g,7h,0,0,4s,0,0
+0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Arch Cave 1
+PAL 0
+AVA 1f
 
 ROOM a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -3500,6 +3521,103 @@ TIL 7c
 00000000
 00000000
 
+TIL 7d
+00110000
+00110000
+00110000
+00110000
+00110000
+00110000
+00110000
+00110000
+NAME alvohaste
+
+TIL 7e
+00111100
+00100010
+01011101
+01010101
+01010101
+01011101
+00100010
+00111100
+NAME alvo
+
+TIL 7f
+00000000
+00000000
+00010000
+00100000
+00110000
+00011000
+00011000
+00110000
+>
+00000000
+00000000
+00100000
+00010000
+00110000
+01100000
+01100000
+00110000
+NAME tentaculoalvo
+
+TIL 7g
+10100110
+11011101
+10001011
+00000011
+00000001
+00000000
+00000000
+00000000
+NAME tronc1
+
+TIL 7h
+00000000
+00000000
+10000000
+10000000
+00000000
+00000000
+00000000
+00000000
+NAME tronc2
+
+TIL 7i
+00000001
+00000011
+00000011
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME tronco3
+
+TIL 7j
+00000000
+00000000
+00000000
+00000001
+00000011
+00000001
+00000000
+00000000
+NAME tronc4
+
+TIL 7k
+00000000
+00000000
+00000000
+11000000
+11000000
+10000000
+00000000
+00000000
+NAME tronco5
+
 SPR 10
 00111000
 01000100
@@ -3630,7 +3748,7 @@ SPR 19
 01100000
 11000000
 NAME A lâmina
-DLG u
+DLG 18
 POS k 6,7
 
 SPR A
@@ -4058,15 +4176,59 @@ DLG 15
 POS y 6,4
 
 SPR 1e
-00000000
-00000000
-00000000
-00000000
+00010000
+00010100
+01011100
+00011110
+01011110
+01111110
+01111110
 00111100
-00011000
+>
+00010000
+00000100
+00010100
+01011100
+01011110
+01111110
+01111110
 00111100
+NAME fogo
+POS 12 9,11
+
+SPR 1f
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArcChar3
+
+SPR 1h
+00010000
+00111000
+00111000
+00111000
+00111000
+01111100
+00010000
+00010000
+NAME Attack_Arch_MimicLgc
+POS 12 4,9
+
+SPR 1i
+00111000
+01000100
+01000100
+00000100
 00011000
-POS y 4,10
+00010000
+00000000
+00010000
+POS 12 8,2
 
 ITM 2
 00000000
@@ -4604,6 +4766,210 @@ NAME MonstroDialog
 DLG 16
 
 NAME sprite 1d dialog
+
+DLG 17
+"""
+"Você escolheu a chama" Disse o Rei Sapo{pg}"É a escolha de quem opta pelo caos. Uma alma tão caótica assim é perigosa para a sociedade"{pg}O Rei sapo transforma o Guerreiro em uma chama que queima para sempre na caverna. {item "4" {{item "4"} + 1}}{pg}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME ChamaMorteLgc
+
+DLG 18
+"""
+"Você escolheu a lâmina" Disse o Rei Sapo{pg}"É a escolha de quem opta pela violência. Uma alma com tamanha escuridão em seu coração nao merece sair da caverna"{pg}O Rei Sapo, com seu poder, levita a lâmina e atinge o guerreiro, o matando.{item "4" {{item "4"} + 1}}{pg}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+
+    }{
+      - {item "ArchDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME LaminaLgc
 
 DLG a
 Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
@@ -5201,3 +5567,4 @@ NAME pick up key
 ENV 99 65 6 96 152
 BEAT 95 0
 SQR P4
+
