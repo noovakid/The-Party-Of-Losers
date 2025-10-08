@@ -911,22 +911,42 @@ PAL 0
 
 ROOM 1a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,8e,0,0,0,0,0,4s,7o,7o
+0,0,4t,0,0,0,8i,8f,8h,0,0,0,0,90,0,7r
+0,0,4t,0,0,0,8k,8g,8j,0,0,0,0,90,0,7r
+0,0,4t,0,0,0,8n,8l,8m,0,0,0,0,90,0,7r
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,7o,7p
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4u,5a,0,0,0,0,0,0,0,0,4w,4v,0,0
+0,0,0,4t,0,0,0,0,0,0,0,4s,0,0,0,0
+0,0,0,4t,0,0,0,0,0,0,0,4s,0,0,0,0
+0,0,0,4u,4w,5a,0,0,0,4w,4w,4v,0,0,0,0
+0,0,0,0,0,4s,0,0,4s,0,0,0,0,0,0,0
+0,0,0,0,0,4s,0,0,4s,0,0,0,0,0,0,0
+0,0,0,0,0,4u,4w,4w,4v,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Healer room 3
+PAL 0
+
+ROOM 1b
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,8e,0,0,0,0,0,4s,7o,7o
+0,0,4t,0,0,0,8i,8f,8h,0,62,61,64,90,0,7r
+0,0,4t,62,61,68,8k,8g,8j,0,67,65,0,90,0,7r
+0,0,4t,67,65,64,8n,8l,8m,0,0,66,0,90,0,7r
+0,0,4t,0,66,0,0,0,0,67,61,64,0,4s,7o,7p
+0,0,4t,0,0,0,0,0,0,0,65,0,0,4s,0,0
+0,0,4u,5a,0,0,0,0,0,0,66,0,4w,4v,0,0
+0,0,0,4t,0,0,0,0,0,0,0,4s,0,0,0,0
+0,0,0,4t,0,0,0,0,0,0,0,4s,0,0,0,0
+0,0,0,4u,4w,5a,0,0,0,4w,4w,4v,0,0,0,0
+0,0,0,0,0,4s,0,0,4s,0,0,0,0,0,0,0
+0,0,0,0,0,4s,0,0,4s,0,0,0,0,0,0,0
+0,0,0,0,0,4u,4w,4w,4v,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Healer room 3 goblins
 PAL 0
 
 TIL 10
@@ -1861,6 +1881,17 @@ TIL 89
 01000011
 NAME tronco_2
 
+TIL 90
+01111110
+00010010
+01111110
+00010010
+01111110
+00010010
+01111110
+00010010
+NAME grade
+
 TIL b
 01100010
 01100010
@@ -1870,7 +1901,6 @@ TIL b
 01100010
 01100010
 01100010
-NAME r_column
 WAL true
 
 TIL c
@@ -4222,10 +4252,10 @@ NAME goblintronobaixo
 
 TIL 8h
 00000000
+00010000
 00000000
 00000000
-00000000
-10000000
+10000010
 01000000
 11000000
 01000000
@@ -4243,9 +4273,9 @@ NAME braçodireito
 TIL 8i
 00000000
 00000000
+00000100
 00000000
-00000000
-00000001
+00100001
 00000010
 00000011
 00000010
@@ -4627,6 +4657,45 @@ NAME portasaida
 DLG 1w
 POS 19 8,11
 
+SPR 22
+00111000
+01000100
+00000100
+00001000
+00010000
+00000000
+00010000
+00000000
+NAME reigoblinconversa
+DLG 1x
+POS 1a 7,6
+
+SPR 23
+00000000
+00111110
+01111111
+01010101
+01111111
+00111110
+01100000
+10000000
+NAME conversarhealer
+DLG 1w
+POS 1b 8,7
+
+SPR 24
+00010000
+00111000
+00111000
+00111000
+00111000
+01111100
+00010000
+00010000
+NAME ATAQUEgolins
+DLG 1y
+POS 1b 6,7
+
 SPR A
 00000000
 00111100
@@ -4645,7 +4714,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 18 7,1
+POS 17 8,1
 
 SPR b
 00000000
@@ -7120,7 +7189,7 @@ DLG 1t
 NAME DeadManSpr dialog
 
 DLG 1u
-A curandeira decide que cumprirá sua missão como curandeira, e começa a preparar uma poção de cura com os frutos medicinais usando a receita de seu grimório{pg}Ao terminar a receita, percebe que os homens não resistiram a espera da receita{pg}A curandeira se desespera e procura um feitiço de ressurreição em seu grimório  {pg}Ela então encontra um feitiço de dar vida aos mortos e executa-o com uma {rbw}inesperada{/rbw} maestria, o que ela não esperava, é que os homens voltariam como zumbis... porém, pelo lado bom, a porta da sala se abre{pg}{exit "Healer room 3" 0 0}
+A curandeira decide que cumprirá sua missão como curandeira, e começa a preparar uma poção de cura com os frutos medicinais usando a receita de seu grimório{pg}Ao terminar a receita, percebe que os homens não resistiram a espera da receita{pg}A curandeira se desespera e procura um feitiço de ressurreição em seu grimório  {pg}Ela então encontra um feitiço de dar vida aos mortos e executa-o com uma {rbw}inesperada{/rbw} maestria, o que ela não esperava, é que os homens voltariam como zumbis... porém, pelo lado bom, a porta da sala se abre{pg}{exit "Healer room 3" 6 13}
 NAME Cura? dialog
 
 DLG 1v
@@ -7129,7 +7198,7 @@ NAME portasaida dialog
 
 DLG 1w
 """
-A curandeira decide que não vai gastar a fruta curativa dela em pessoas que já querem morrer e ignora o aviso deles, pois imagina que já estão alucinando{pg}O único problema é que: "Sai da sala quem morrer primeiro", e dito e feito, a curandeira conseguiu sair da sala, mas não viva...{item "5" {{item "5"} + 1}}{
+A curandeira percebe que os minions do rei goblin estão feridos, então decide se redimir do acidente curando a todos {pg}Porém... {rbw}Não surpreendentemente...{/rbw} ela erra o feitiço, e cria uma fumaça fedorenta ao redor da sala, irritando mais ainda os goblins, e dando um fim de vez na coitada da curandeira...{item "5" {{item "5"} + 1}}{
   - {item "HealerDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
@@ -7228,6 +7297,14 @@ A curandeira decide que não vai gastar a fruta curativa dela em pessoas que já
 }
 """
 NAME Healer_Exit_Death
+
+DLG 1x
+A curandeira se aproxima do Goblin Rei chorando que nem uma criança birrenta por conta de um corte na mão{pg}Ela pega seu grimório e acessa uma pagina de feitiços para feridas pequenas, mas acaba confundindo o feitiço de cortes superficiais com o de queimaduras pequenas, que faz com que a ferida do rei goblin congele e cause ainda mais dor{pg}O rei então fica INDIGNADO e chama seus minions goblins para atacar a curandeira{exit "Healer room 3 goblins" 7 7}
+NAME reigoblinconversa dialog
+
+DLG 1y
+A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}Uma missão que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.
+NAME ATAQUEgolins dialog
 
 VAR Morte
 0
