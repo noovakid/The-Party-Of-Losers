@@ -261,8 +261,8 @@ ROOM 13
 0,0,0,0,4t,0,0,0,0,0,0,4s,0,0,0,0
 0,0,0,0,4t,0,0,0,0,0,0,4s,0,0,0,0
 0,0,0,0,4v,0,0,0,0,0,0,4u,0,0,0,0
-0,0,0,0,7s,7l,7l,7l,7l,7l,7l,7r,0,0,0,0
-0,0,0,0,7s,7l,7l,7l,7l,7l,7l,7r,0,0,0,0
+0,0,0,0,7s,7l,7l,7l,7l,8p,7l,7r,0,0,0,0
+0,0,0,0,7s,7l,7l,7l,7l,8o,7l,7r,0,0,0,0
 0,0,0,0,7s,7l,7l,7l,7l,7l,7l,7r,0,0,0,0
 0,0,0,0,7q,7o,7o,7m,7n,7o,7o,7p,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -4192,6 +4192,29 @@ TIL 8n
 00000000
 NAME chão_trono_lado_2
 
+TIL 8o
+00001100
+00001110
+00110010
+01101100
+01101110
+01111110
+00111100
+00000000
+NAME Sacola
+
+TIL 8p
+00000000
+01111110
+01111110
+01111110
+01111110
+01111110
+00000000
+01100000
+NAME placa2
+WAL true
+
 SPR 10
 00111000
 01000100
@@ -4817,6 +4840,7 @@ SPR 1j
 00000000
 01111110
 NAME placa pe1
+DLG 1f
 POS 13 6,9
 
 SPR 1k
@@ -4841,7 +4865,6 @@ SPR 1l
 00111100
 00000000
 NAME sacola
-POS 13 9,10
 
 SPR 1m
 00000000
@@ -4867,6 +4890,19 @@ SPR 1o
 00100100
 NAME presas aranhas
 POS 14 8,8
+
+SPR 1p
+01000000
+11100000
+01100000
+00010000
+00001000
+00000100
+00000001
+00000011
+NAME flechadinha
+DLG 1g
+POS 13 9,8
 
 ITM 2
 00000000
@@ -5632,7 +5668,7 @@ DLG 18
 NAME LaminaLgc
 
 DLG 19
-"A armadilha também é a solução"
+"A armadilha também é a solução"{pg}...{pg}"ouviu?"
 NAME papel dialog
 
 DLG a
@@ -6203,6 +6239,116 @@ NAME Arch_Attack_Mimic
 DLG 1d
 Você, Arqueira que nao sabe usar seu arco, será a líder do grupo!{pg}{exit "Arch Cave 1" 7 2 "tunnel"}
 NAME Arch_Warrior_Dead dialog
+
+DLG 1e
+
+NAME placa pe1 dialog
+
+DLG 1f
+"""
+A Arqueira analisa as placas de pressão no chão e percebe que há pegadas de pessoas anteriores, entao decide segui-las{pg}A Arqueira se sentiu {shk}GENIAL{/shk} pois pensou que, as pegadas, revelavam a senha do portao{pg}Porem, as pegadas sao das vítimas anteriores que pensaram a mesma coisa{pg}E a Arqueira virou uma delas{item "6" {{item "6"} + 1}}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+
+    }{
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "HealerDeath"} == 1 ?
+            {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "ArchDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME Arch_Trap_Death
+
+DLG 1g
+A Arqueira vê uma sacola pesada pressionando a placa e então decide atirar nela para retirá-la de lá{pg}Mas, como ela não sabe usar seu arco, ela erra a flehcada e perde o equlíbrio.{pg}Sem querer seu pé pisa em placas específicas que formam uma música{pg}E assim, abrindo o portao{pg}{exit "Arch Cave 3" 7 2 "tunnel"}
+NAME sprite 1p dialog
 
 VAR Morte
 0
