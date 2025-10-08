@@ -316,6 +316,27 @@ NAME Arch Cave 3 copy 1
 PAL 0
 AVA 1f
 
+ROOM 16
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,4p,4q,4q,4r,0,0,0,0,0,0
+0,0,0,0,0,0,4t,0,3j,4s,0,0,0,0,0,0
+0,0,0,0,0,0,4t,3k,0,4s,0,0,0,0,0,0
+0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
+0,0,4t,7z,82,0,3j,0,0,0,0,0,0,4s,0,0
+0,0,4t,81,8r,83,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,84,80,0,0,0,0,0,0,3k,4s,0,0
+0,0,4t,3k,0,0,0,0,0,0,0,3j,0,4s,0,0
+0,0,4t,0,0,0,0,7v,7t,7w,0,0,85,4s,0,0
+0,0,4t,0,3j,0,0,7x,7u,7y,0,0,0,4s,0,0
+0,0,4t,85,0,3k,0,0,0,0,0,0,3k,4s,0,0
+0,0,4u,5b,5b,5b,5b,5b,5b,5b,5b,5b,5b,4v,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Arch Cave 3 copy 2
+PAL 0
+AVA 1f
+
 ROOM a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -4246,6 +4267,17 @@ TIL 8q
 10100000
 11000000
 
+TIL 8r
+00011000
+00011110
+00100000
+01111010
+11111011
+11111111
+11111111
+01111110
+NAME SACOLANAODINHEIRO
+
 SPR 10
 00111000
 01000100
@@ -4920,7 +4952,7 @@ SPR 1o
 00100100
 00100100
 NAME presas aranhas
-DLG 1j
+DLG 1o
 POS 14 8,8
 
 SPR 1p
@@ -4947,6 +4979,18 @@ SPR 1q
 00100100
 DLG 1l
 POS 15 8,8
+
+SPR 1r
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00100100
+00100100
+DLG 1n
+POS 16 8,8
 
 ITM 2
 00000000
@@ -6397,7 +6441,7 @@ A Arqueira vê uma sacola pesada pressionando a placa e então decide atirar nel
 NAME sprite 1p dialog
 
 DLG 1h
-Você obteve: "Arco Impressionante mas nem tanto"
+Você obteve: "Arco Impressionante mas nem tanto"{exit "Arch Cave 3 copy 2" 11 6}
 NAME arconovo dialog
 
 DLG 1i
@@ -6625,6 +6669,19 @@ NAME SpiderQueenLgc2
 DLG 1m
 Você obteve: "Sacola de moedas"{exit "Arch Cave 3 copy 1" 4 6}
 NAME SACOLADINHEIRO dialog
+
+DLG 1n
+"""
+{
+  - {item "arconovo"} == 1 ?
+    A Arqueira aponta seu novo arco corajosamente em direção à Rainha Aranha{pg}Com suas habilidades de tecela, enrola a arma com sua seda, transformando o arco em uma harpa{pg}"Agora toque uma linda melodia para mim, humana" e assim a Arqueira aceita a missão{pg}A Arqueira toca uma linda música que encanta a Aranha e  criatura ajuda a Arqueira e seus amigos a saírem da caverna
+}
+"""
+NAME sprite 1r dialog
+
+DLG 1o
+ "Olá Humana!" Diz a Rainha Aranha{pg}"Perdida por aqui? Que pena!"
+NAME SpiderQueenNeutra
 
 VAR Morte
 0
