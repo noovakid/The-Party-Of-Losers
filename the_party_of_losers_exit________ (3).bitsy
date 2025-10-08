@@ -5120,15 +5120,26 @@ POS 17 6,8
 
 SPR 1x
 00000000
+00111110
 01111111
+01010101
+01111111
+00111110
+01100000
+10000000
+
+SPR 1y
 00000000
-00000000
-00001000
-00011000
-00010000
-00010000
+00111110
+01111111
+01010101
+01111111
+00111110
+01100000
+10000000
+NAME interact tree
 DLG 1s
-POS 17 3,5
+POS 17 10,8
 
 ITM 2
 00000000
@@ -6932,8 +6943,8 @@ Ao centro da caverna, a Curandeira encontra uma arvore que, absolutamente ningu�
 NAME Tree_Talk
 
 DLG 1s
-
-NAME sprite 1x dialog
+A curandeira fica curiosa com a botânica exótica da arvore da caverna{pg}Ao analisar os frutos da arvore, percebe que eles possuem propriedades curativas {pg}
+NAME interact tree dialog
 
 VAR Morte
 0
