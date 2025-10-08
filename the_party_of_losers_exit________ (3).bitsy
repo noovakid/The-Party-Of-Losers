@@ -4469,6 +4469,7 @@ SPR j
 00001000
 00010000
 NAME Arch_Warrior_Dead
+DLG 1d
 POS 5 10,9
 
 SPR k
@@ -6099,7 +6100,7 @@ NAME fogo dialog
 
 DLG 1c
 """
-{item "6" {{item "6"} + 1}}{pg}{
+A Arqueira olha o ÓBVIO mimico se passando por um alvo e entao decide atirar nele.{pg}Porém, no lugar de puxar uma flecha a arqueira puxa, de sua mochilha, uma tocha acesa.{pg}E, além de errar o alvo estático, ela queima sua mão.{pg}Inicialmente o Mimico ia ignorá-la, mas ele achou a cena tao patética que decidiu atacá-la, a matando de vez.{item "6" {{item "6"} + 1}}{
   - {item "ArchDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
@@ -6198,6 +6199,10 @@ DLG 1c
 }
 """
 NAME Arch_Attack_Mimic
+
+DLG 1d
+Você, Arqueira que nao sabe usar seu arco, será a líder do grupo!{pg}{exit "Arch Cave 1" 7 2 "tunnel"}
+NAME Arch_Warrior_Dead dialog
 
 VAR Morte
 0
