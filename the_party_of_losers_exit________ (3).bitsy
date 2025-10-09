@@ -4527,7 +4527,7 @@ SPR 13
 01111110
 11111111
 NAME Mage_Warrior_Dead
-DLG o
+DLG 8
 POS g 2,9
 
 SPR 14
@@ -4540,6 +4540,7 @@ SPR 14
 00001000
 00010000
 NAME ArcChar2
+DLG 1d
 POS g 10,9
 
 SPR 15
@@ -4552,6 +4553,7 @@ SPR 15
 00111000
 00000000
 NAME Healer_Warrior_Dead
+DLG 20
 POS g 14,9
 
 SPR 16
@@ -4564,6 +4566,7 @@ SPR 16
 00111000
 00000000
 NAME Healer_Mage_Warrior_Dead
+DLG 20
 POS i 14,9
 
 SPR 17
@@ -4576,6 +4579,7 @@ SPR 17
 00001000
 00010000
 NAME Arch_Warrior_Mage_Dead
+DLG 1d
 POS i 10,9
 
 SPR 18
@@ -4695,6 +4699,71 @@ SPR 24
 NAME ATAQUEgolins
 DLG 1y
 POS 1b 6,7
+
+SPR 25
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME MageChar4
+DLG 8
+POS l 2,9
+
+SPR 26
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME MageChar5
+DLG 8
+POS m 2,9
+
+SPR 27
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME MageChar6
+DLG 8
+POS n 2,9
+
+SPR 28
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME MageChar7
+DLG 8
+POS o 2,9
+
+SPR 29
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME MageChar8
+DLG 8
+POS p 2,9
 
 SPR A
 00000000
@@ -4853,6 +4922,7 @@ SPR k
 00111000
 00000000
 NAME HealerChar
+DLG 20
 POS 5 14,9
 
 SPR l
@@ -4934,7 +5004,7 @@ SPR r
 11010000
 01001000
 NAME Warrior_Mage_Dead
-DLG m
+DLG n
 POS 8 6,9
 
 SPR s
@@ -4947,6 +5017,7 @@ SPR s
 00001000
 00010000
 NAME Arch_Mage_Dead
+DLG 1d
 POS 8 10,9
 
 SPR t
@@ -5005,7 +5076,6 @@ SPR w
 00111000
 00000000
 NAME Healer_Dead_Mage
-POS 8 14,9
 
 SPR x
 00000000
@@ -5341,6 +5411,7 @@ SPR 1v
 00100000
 00000000
 NAME DeadMan2
+DLG 1z
 POS 18 10,6
 
 SPR 1w
@@ -5378,6 +5449,264 @@ SPR 1y
 NAME interact tree
 DLG 1s
 POS 17 10,8
+
+SPR 2a
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME MageChar9
+DLG 8
+POS q 2,9
+
+SPR 2b
+00000000
+00000000
+00001100
+00011000
+00111000
+00001100
+01111110
+11111111
+NAME MageChar10
+DLG 8
+POS r 2,9
+
+SPR 2c
+00000011
+00000111
+00001111
+10011110
+01111100
+00111000
+11010000
+01001000
+NAME WarriorChar3
+DLG n
+POS l 6,9
+
+SPR 2d
+00000011
+00000111
+00001111
+10011110
+01111100
+00111000
+11010000
+01001000
+NAME WarriorChar4
+DLG n
+POS m 6,9
+
+SPR 2e
+00000011
+00000111
+00001111
+10011110
+01111100
+00111000
+11010000
+01001000
+NAME WarriorChar5
+DLG n
+POS n 6,9
+
+SPR 2f
+00000011
+00000111
+00001111
+10011110
+01111100
+00111000
+11010000
+01001000
+NAME WarriorChar6
+DLG n
+POS s 6,9
+
+SPR 2g
+00000011
+00000111
+00001111
+10011110
+01111100
+00111000
+11010000
+01001000
+NAME WarriorChar7
+DLG n
+POS t 6,9
+
+SPR 2h
+00000011
+00000111
+00001111
+10011110
+01111100
+00111000
+11010000
+01001000
+NAME WarriorChar8
+DLG n
+POS u 6,9
+
+SPR 2i
+00000011
+00000111
+00001111
+10011110
+01111100
+00111000
+11010000
+01001000
+NAME WarriorChar9
+DLG n
+POS x 6,9
+
+SPR 2j
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArchChar5
+POS o 10,9
+
+SPR 2k
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArchChar6
+DLG 1d
+POS r 10,9
+
+SPR 2l
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArchChar7
+DLG 1d
+POS s 10,9
+
+SPR 2m
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArchChar8
+DLG 1d
+POS v 10,9
+
+SPR 2n
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArchChar9
+DLG 1d
+POS x 10,9
+
+SPR 2o
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME HealerChar2
+DLG 20
+POS 8 14,9
+
+SPR 2p
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME HealerChar5
+DLG 20
+POS m 14,9
+
+SPR 2q
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME HealerChar6
+DLG 20
+POS p 14,9
+
+SPR 2r
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME HealerChar7
+DLG 20
+POS t 14,9
+
+SPR 2s
+01000110
+10101010
+10010010
+10010010
+10010010
+01010100
+00111000
+00000000
+NAME HealerChar8
+DLG 20
+POS w 14,9
+
+SPR 2t
+00010000
+00001000
+00010100
+00010100
+00000100
+00010100
+00001000
+00010000
+NAME ArchChar9
+POS l 10,9
 
 ITM 2
 00000000
@@ -6148,6 +6477,18 @@ DLG 19
 "A armadilha também é a solução"{pg}...{pg}"ouviu?"
 NAME papel dialog
 
+DLG 20
+Você, Curandeira que nunca curou ninguém, será a líder do grupo!{exit "Healer room 1" 8 1 "tunnel"}
+NAME HealerChar dialog
+
+DLG 21
+
+NAME HealerChar2 dialog
+
+DLG 22
+
+NAME MageChar4 dialog
+
 DLG a
 Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
 NAME Warrior_Goblin_1_Attack
@@ -6715,7 +7056,7 @@ NAME Arch_Attack_Mimic
 
 DLG 1d
 Você, Arqueira que nao sabe usar seu arco, será a líder do grupo!{pg}{exit "Arch Cave 1" 7 2 "tunnel"}
-NAME Arch_Warrior_Dead dialog
+NAME ArchChardialog
 
 DLG 1e
 
@@ -7305,6 +7646,10 @@ NAME reigoblinconversa dialog
 DLG 1y
 A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}Uma missão que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.
 NAME ATAQUEgolins dialog
+
+DLG 1z
+
+NAME DeadMan2 dialog
 
 VAR Morte
 0
