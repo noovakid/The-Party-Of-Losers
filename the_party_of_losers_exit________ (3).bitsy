@@ -4783,7 +4783,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 1 7,13
+POS 18 8,3
 
 SPR b
 00000000
@@ -5411,7 +5411,7 @@ SPR 1v
 00100000
 00000000
 NAME DeadMan2
-DLG 1z
+DLG 1u
 POS 18 10,6
 
 SPR 1w
@@ -7530,7 +7530,7 @@ DLG 1t
 NAME DeadManSpr dialog
 
 DLG 1u
-A curandeira decide que cumprirá sua missão como curandeira, e começa a preparar uma poção de cura com os frutos medicinais usando a receita de seu grimório{pg}Ao terminar a receita, percebe que os homens não resistiram a espera da receita{pg}A curandeira se desespera e procura um feitiço de ressurreição em seu grimório  {pg}Ela então encontra um feitiço de dar vida aos mortos e executa-o com uma {rbw}inesperada{/rbw} maestria, o que ela não esperava, é que os homens voltariam como zumbis... porém, pelo lado bom, a porta da sala se abre{pg}{exit "Healer room 3" 6 13}
+A curandeira decide que cumprirá sua missão como curandeira, e começa a preparar uma poção de cura com os frutos medicinais usando a receita de seu grimório{pg}Ao terminar a receita, percebe que os homens não resistiram a espera da receita{pg}A curandeira se desespera e procura um feitiço de ressurreição em seu grimório  {pg}Ela então encontra um feitiço de dar vida aos mortos e executa-o com uma {rbw}inesperada{/rbw} maestria, o que ela não esperava, é que os homens voltariam como zumbis... porém, pelo lado bom, a porta da sala se abre{pg}{exit "Healer room 3" 6 13 "tunnel"}
 NAME Cura? dialog
 
 DLG 1v
