@@ -4783,7 +4783,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 17 8,1
+POS 1 7,13
 
 SPR b
 00000000
@@ -7403,7 +7403,7 @@ DLG 1n
 {
   - {item "arconovo"} == 1 ?
     A Arqueira aponta seu novo arco corajosamente em direção à Rainha Aranha{pg}Com suas habilidades de tecela, enrola a arma com sua seda, transformando o arco em uma harpa{pg}"Agora toque uma linda melodia para mim, humana" e assim a Arqueira aceita a missão{pg}A Arqueira toca uma linda música que encanta a Aranha e  criatura ajuda a Arqueira e seus amigos a saírem da caverna
-}
+}{pg}{exit "ArchEnding" 0 0 "fade_w"}{pg}Devido ao uso errado do arco, a Arqueira descobriu um novo talento:{pg}Ela sabia tocar muito bem{pg}E não demorou muito para ela se apaixonar pelas próprias melodias{pg}Ela se tornou a mais renomada Barda do reino e todos dançam ao som da harpa da antiga Arqueira
 """
 NAME sprite 1r dialog
 
