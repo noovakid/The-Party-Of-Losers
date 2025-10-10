@@ -8438,7 +8438,7 @@ A curandeira se aproxima do Goblin Rei chorando que nem uma criança birrenta po
 NAME reigoblinconversa dialog
 
 DLG 1y
-A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}Uma missão que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.
+A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}Uma missão que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.{exit "Healer Ending" 0 0 "fade_w"}
 NAME ATAQUEgolins dialog
 
 DLG 1z
