@@ -227,6 +227,7 @@ p,g,f,0,0,0,0,0,0,0,0,0,0,h,i,q
 o,n,m,0,0,0,0,4k,4n,0,0,0,0,j,k,l
 NAME ArchEnding
 PAL 0
+AVA 2v
 
 ROOM 12
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -583,6 +584,7 @@ p,g,f,0,0,0,0,0,0,0,0,0,0,h,i,q
 o,n,m,0,0,0,0,4k,4n,0,0,0,0,j,k,l
 NAME Warrior Ending
 PAL 0
+AVA 2v
 
 ROOM k
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -966,6 +968,7 @@ p,g,f,0,0,0,0,0,0,0,0,0,0,h,i,q
 o,n,m,0,0,0,0,4k,4n,0,0,0,0,j,k,l
 NAME Healer Ending
 PAL 0
+AVA 2v
 
 ROOM 1d
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -986,6 +989,7 @@ ROOM 1d
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Ending bar
 PAL 0
+AVA 2v
 
 TIL 10
 01111001
@@ -5282,6 +5286,17 @@ SPR 10
 00010000
 00000000
 00010000
+>
+00000000
+00011000
+00100100
+00000100
+00011000
+00010000
+00010000
+00000000
+NAME GoblinInfo
+DLG 23
 POS f 8,2
 
 SPR 11
@@ -6502,6 +6517,39 @@ NAME ArchChar9
 DLG 1d
 POS l 10,9
 
+SPR 2u
+00111000
+01000100
+01000100
+00000100
+00011000
+00010000
+00000000
+00010000
+>
+00000000
+00011000
+00100100
+00000100
+00011000
+00010000
+00010000
+00000000
+NAME MonstroUmOlhoInfo
+DLG 24
+POS y 6,13
+
+SPR 2v
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME Cinematic
+
 ITM 2
 00000000
 00000000
@@ -6741,7 +6789,7 @@ NAME Attack_Mage1 dialog
 
 DLG 10
 """
-O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado.{pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{item "4" {{item "4"} + 1}}{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{
+O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado.{pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{item "4" {{item "4"} + 1}}{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{pg}{pal "2"}{wvy}principalmente bater em você.{/wvy}{pg}{
   - {item "WarriorDeath"} == 1 ?
     {
       - {item "MageDeath"} == 0 ?
@@ -6842,7 +6890,7 @@ O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a 
 NAME GoblinDeathLgc
 
 DLG 11
-"Você escolheu a semente" Diz o Rei Sapo, com toda sua grandiosidade {pg}"Alguém com tanta luz em seu coração não merece a escuridão cruel desta caverna"{pg}O Rei Sapo abre uma passagem e concede ao Guerreiro um livro mágico {pg}Parabéns! Você recebeu "O Grimório Das Lambidas Milagrosas"{item "Grimório" {{item "Grimório"} + 1}}{exit "Warrior Cave 3" 7 13 "tunnel"}
+"Você escolheu a semente" Diz o Rei Sapo, com toda sua grandiosidade {pg}"Alguém com tanta luz em seu coração não merece a escuridão cruel desta caverna"{pg}O Rei Sapo abre uma passagem e concede ao Guerreiro um livro mágico {pg}Parabéns! Você recebeu "O Grimório Das Lambidas Milagrosas"{item "Grimório" {{item "Grimório"} + 1}}{pg}{exit "Warrior Cave 3" 7 13 "tunnel"}
 NAME A semente dialog
 
 DLG 12
@@ -6955,7 +7003,7 @@ DLG 15
 """
 {
   - {item "MagicSword"} == 1 ?
-    O guerreiro se aproxima do monstro com uma espada mágica e ameaça a criatura.{pg}Mas o monstro é hipocondríaco e teme que exista alguma doença na espada{pg}Já que ela foi encontrada no chão de uma caverna suja.{pg}A criatura espirra de tanto nervosismo e contamina o Guerreiro com uma doença letal.{pg}E em poucos minutos o Guerreiro morre.
+    O guerreiro se aproxima do monstro com uma espada mágica e ameaça a criatura.{pg}Mas o monstro é hipocondríaco e teme que exista alguma doença na espada{pg}Já que ela foi encontrada no chão de uma caverna suja.{pg}A criatura espirra de tanto nervosismo e contamina o Guerreiro com uma doença letal.{pg}{pal "2"}{item "WarriorDeath" {{item "WarriorDeath"} + 1}}E em poucos minutos o Guerreiro morre.
 }{pg}{
   - {item "WarriorDeath"} == 1 ?
     {
@@ -7054,7 +7102,10 @@ DLG 15
     }
 }{
   - {item "Grimório"} == 1 ?
-    "Opa, bom?" Pergunta o monstro{pg}"Por gentileza, poderia se afastar de mim? Não quero pegar nenhuma doença"{pg}...{pg}"Espera! Esse é aquele livro que uns caras legais usam pra curar as pessoas?"{pg}"Poderia me curar da minha gripe? Já estou com dor de cabeça!"{pg}O Guerreiro procura no Grimório folheira o grimório e encontra o capítulo "Cura para gripe de monstros que possuem um olho só perdidos dentro de uma caverna escura e suja"{pg}O Guerreiro consegue lançar um feitiço que cura o monstro de sua gripe.{pg}A criatura, grata por sua ajuda, te guia para a saída da caverna e assim o Guerreiro consegue guiar seus amigos para fora da caverna!{pg}{exit "Warrior Ending" 0 0 "fade_w"}O Guerreiro descobriu algo sobre si: {pg}Talvez ele nunca tenha sido um bom lutador, porque durante esse tempo todo ele era um ótimo cuidador{pg}Desde então o Guerreiro se dedicou a curar os mais necessitados com sua recém-aprendida magia!
+    {
+      - {item "MagicSword"} == 0 ?
+        "Opa, bom?" Pergunta o monstro{pg}"Por gentileza, poderia se afastar de mim? Não quero pegar nenhuma doença"{pg}...{pg}"Espera! Esse é aquele livro que uns caras legais usam pra curar as pessoas?"{pg}"Poderia me curar da minha gripe? Já estou com dor de cabeça!"{pg}O Guerreiro procura no Grimório folheira o grimório e encontra o capítulo "Cura para gripe de monstros que possuem um olho só perdidos dentro de uma caverna escura e suja"{pg}O Guerreiro {rbw}consegue{/rbw} lançar um feitiço que cura o monstro de sua gripe.{pg}A criatura, grata por sua ajuda, te guia para a saída da caverna e assim o Guerreiro consegue guiar seus amigos para fora da caverna!{pg}{exit "Warrior Ending" 0 0 "fade_w"}O Guerreiro descobriu algo sobre si: {pg}Talvez ele nunca tenha sido um bom lutador, porque durante esse tempo todo ele era um ótimo cuidador{pg}Desde então o Guerreiro se dedicou a curar os mais necessitados com sua recém-aprendida magia!{pg}{exit "Ending bar" 0 0 "tunnel"}Quando saíram da caverna, os aventureiros perceberam que nao erma mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
+    }
 }
 """
 NAME MonstroDialog
@@ -7282,6 +7333,24 @@ NAME HealerChar2 dialog
 DLG 22
 
 NAME MageChar4 dialog
+
+DLG 23
+"""
+O Guerreiro dá de cara com um exército {wvy}{/wvy} de Goblins{pg}Tipo, tao pequeno que um vento poderia convocar a aposentadoria deles{pg}Eles estão rindo, tropeçando uns nos outros e fazendo coisas aleatoriamente estúpidas{pg}como tentar comer pedras e disputar quem consegue lamber o próprio cotovelo.{pg}O Guerreiro olha em volta e percebe que não há absolutamente nada ali que justifique tanta diversão{pg}o que é preocupante.{pg}Escolha o que fazer:
+
+Espada: Ataca
+Balao: Conversa
+"""
+NAME GoblinsInfo
+
+DLG 24
+"""
+Ao se enfiar ainda mais fundo na caverna, o Guerreiro dá de cara com um monstro!{pg}Uma criatura horrível! Medonha! Terrível! Que... tá nervosa?{pg}Tipo, realmente estressada, como se tivesse brigado com o Wi-Fi.{pg}Enfim! Perto dela, há uma espada jogada no chão{pg}aparentemente de um dos esqueletos fedorentos que decoram o ambiente, no melhor estilo ‘toque ossudo de interiores’.{pg}Escolha o que fazer:
+
+Chifre: Conversa
+Espada: Pega a espada
+"""
+NAME MosntroOlhoInfo
 
 DLG a
 Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
