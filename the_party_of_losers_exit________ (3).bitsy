@@ -5573,6 +5573,32 @@ NAME MageChar8
 DLG 8
 POS p 2,9
 
+SPR 30
+00000000
+11111110
+00111011
+00000000
+11011011
+11011111
+11011111
+00000000
+NAME FairyChest
+DLG 2a
+POS b 12,6
+
+SPR 31
+00000000
+11111110
+00111011
+00000000
+11011011
+11011111
+11011111
+00000000
+NAME BaúMentiroso
+DLG 2d
+POS b 12,8
+
 SPR A
 00000000
 00111100
@@ -5872,7 +5898,7 @@ SPR v
 00000000
 NAME SwordChest
 DLG e
-POS b 8,8
+POS b 12,10
 
 SPR w
 01000110
@@ -6549,6 +6575,67 @@ SPR 2v
 00000000
 00000000
 NAME Cinematic
+
+SPR 2w
+00111000
+01000100
+01000100
+00000100
+00011000
+00010000
+00000000
+00010000
+>
+00000000
+00011000
+00100100
+00000100
+00011000
+00010000
+00010000
+00000000
+NAME MagoBaúsInfo
+DLG 26
+POS b 8,2
+
+SPR 2x
+00000000
+11111101
+10001101
+11111101
+10011101
+11111101
+00010000
+00011000
+NAME Placa1
+DLG 27
+POS b 10,6
+
+SPR 2y
+00000000
+11111101
+10001101
+11111101
+10011101
+11111101
+00010000
+00011000
+NAME Placa2
+DLG 28
+POS b 10,8
+
+SPR 2z
+00000000
+11111101
+10001101
+11111101
+10011101
+11111101
+00010000
+00011000
+NAME Placa 3
+DLG 29
+POS b 10,10
 
 ITM 2
 00000000
@@ -7454,6 +7541,22 @@ DLG 25
 """
 NAME ChamaLgc
 
+DLG 26
+O Mago se depara com 3 baús, todos alinhadinhos como se estivessem posando para uma foto de família.{pg}Tem 3 placas também!{pg}Uma delas foi escrita por um guerreiro que, um dia, se perdeu exatamente nesta caverna e... fugiu!{pg}Deixando para trás a espada dele, provavelmente porque pensou: 'Ah, isso aqui é mais pesado que meu ego, alguém merece!
+NAME MagoBaúsInfo dialog
+
+DLG 27
+"O baú debaixo guarda aquilo que você teme mais"
+NAME Placa1 dialog
+
+DLG 28
+"Seria tao legal se o baú de cima falasse a verdade, pena que é um egoísta e esconde o tesouro de você"
+NAME Placa2 dialog
+
+DLG 29
+"Não confie no baú do meio; o perigo está sempre onde menos se espera."
+NAME Placa 3 dialog
+
 DLG a
 Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
 NAME Warrior_Goblin_1_Attack
@@ -7470,7 +7573,7 @@ DLG d
 NAME CaveMagePassed1 dialog
 
 DLG e
-Você encontrou a arma perfeita para um mago:{pg}{wvy}Uma espada!{/wvy}{item "2" {{item "2"} + 1}}{exit "Mage Cave 3 " 14 7 "tunnel"}
+
 NAME SwordChest dialog
 
 DLG f
@@ -8615,6 +8718,218 @@ NAME ATAQUEgolins dialog
 DLG 1z
 
 NAME DeadMan2 dialog
+
+DLG 2a
+"""
+Assim que o baú abre, uma luz rosa explode e surge uma fada furiosa.{pg}{shk}ENTAO FOI VOCÊ QUE ME PRENDEU NESSE BAÚ? TEM IDEIA DE QUANTO TEMPO EU TO AQUI?{/shk}{pg}Ela solta uma magia que transforma o guerreiro em uma rã gorda.{pg}{pal "2"}O Mago libertou a fada. Pena que ela não gostava dele.{item "3" {{item "3"} + 1}}{pg}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME BaúFadaFuriosa
+
+DLG 2b
+
+NAME BaúMentiroso dialog
+
+DLG 2c
+
+NAME FairyChest dialog
+
+DLG 2d
+"""
+O baú abre{pg}mas o Mago nota tarde demais{pg}dentes enormes e gosma escorrem da tampa.{pal "2"}{pal "2"}Surpresa! O baú também queria te abrir.{pg}{item "3" {{item "3"} + 1}}{pg}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "MageDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME BaúMentiroso
 
 VAR Morte
 0
