@@ -5409,7 +5409,7 @@ SPR 18
 01111110
 00111100
 NAME A Chama
-DLG t
+DLG 25
 POS k 6,5
 
 SPR 19
@@ -6821,7 +6821,7 @@ O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a 
           - {item "ArchDeath"} == 1 ?
             {
               - {item "HealerDeath"} == 0 ?
-                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+                {exit "Character Select (Menos Guerreira, Arqueira)" 0 0 "fade_b"}
             }
         }
     }
@@ -7036,7 +7036,7 @@ DLG 15
           - {item "ArchDeath"} == 1 ?
             {
               - {item "HealerDeath"} == 0 ?
-                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+                {exit "Character Select (Menos Guerreira, Arqueira)" 0 0 "fade_b"}
             }
         }
     }
@@ -7234,12 +7234,12 @@ DLG 18
   - {item "WarriorDeath"} == 1 ?
     {
       - {item "MageDeath"} == 0 ?
-
-    }{
-      - {item "ArchDeath"} == 0 ?
         {
-          - {item "HealerDeath"} == 1 ?
-            {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0}
+            }
         }
     }
 }{
@@ -7250,7 +7250,7 @@ DLG 18
           - {item "ArchDeath"} == 1 ?
             {
               - {item "HealerDeath"} == 0 ?
-                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+                {exit "Character Select (Menos Guerreira, Arqueira)" 0 0 "fade_b"}
             }
         }
     }
@@ -7351,6 +7351,108 @@ Chifre: Conversa
 Espada: Pega a espada
 """
 NAME MosntroOlhoInfo
+
+DLG 25
+"""
+"Você protegeu  a chama" Disse o Rei Sapo{pg}"mas luz sem vida é só fogo que consome. Uma alma com tamanha escuridão em seu coração nao merece sair da caverna"{pg}O Rei Sapo, com seu poder, transforma o Guerreiro em uma chama que queima para sempre e ele nunca mais viu seus amigos{item "4" {{item "4"} + 1}}{pg}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 0 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "WarriorDeath"} == 1 ?
+    {
+      - {item "MageDeath"} == 1 ?
+        {
+          - {item "ArchDeath"} == 1 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME ChamaLgc
 
 DLG a
 Ao se deparar com o minúsculo exército de goblins, ele assume uma pose heroica e ataca com sau espada.{pg}Mas a espada de madeira voa de sua mão acertando a cabeça de um dos Goblins{pg} {wvy}Curiosamente{/wvy} este Goblin estava muito doente e foi curado com a pancada da espada em sua cabeça{pg}Gratos pelo ato heroico do Guerreiro, os Goblins deram instruções de como sair da caverna.{pg}Parabéns! Você venceu usando a arma mais poderosa do Guerreiro: {wvy}Sorte?{/wvy}{pg}{exit "Warrior Cave 2" 13 7 "tunnel"}
