@@ -6805,12 +6805,12 @@ O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a 
   - {item "WarriorDeath"} == 1 ?
     {
       - {item "MageDeath"} == 0 ?
-
-    }{
-      - {item "ArchDeath"} == 0 ?
         {
-          - {item "HealerDeath"} == 1 ?
-            {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 1" 0 0 "fade_b"}
+            }
         }
     }
 }{
