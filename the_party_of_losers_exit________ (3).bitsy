@@ -6703,12 +6703,12 @@ Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o 
   - {item "MageDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
-
-    }{
-      - {item "ArchDeath"} == 0 ?
         {
-          - {item "HealerDeath"} == 1 ?
-            {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+          - {item "ArchDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Curandeira) " 0 0 "fade_b"}
+            }
         }
     }
 }{
@@ -8292,12 +8292,12 @@ A curandeira, indignada por ter caído na caverna, desconta a raiva na arvore{pg
   - {item "HealerDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
-
-    }{
-      - {item "MageDeath"} == 0 ?
         {
-          - {item "ArchDeath"} == 1 ?
-            {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "ArchDeath"} == 1 ?
+                {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
         }
     }
 }{
@@ -8308,7 +8308,7 @@ A curandeira, indignada por ter caído na caverna, desconta a raiva na arvore{pg
           - {item "MageDeath"} == 1 ?
             {
               - {item "ArchDeath"} == 0 ?
-                {exit "Character Select (Menos Mago, Curandeira)" 0 0 "fade_b"}
+                {exit "Character Select (Menos Mago, Guerreiro, Arqueira) copy 1" 0 0 "fade_b"}
             }
         }
     }
