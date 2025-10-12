@@ -234,15 +234,15 @@ ROOM 12
 0,0,0,0,0,0,4p,4q,4q,4r,0,0,0,0,0,0
 0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
 0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
-0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,7f,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,7e,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4p,4q,4q,4q,50,am,0,4z,4q,4q,4q,4r,0,0
+0,0,4t,0,8w,8v,0,0,an,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,am,0,0,0,4s,0,0
+0,0,4t,7f,0,0,0,0,an,0,0,0,0,4s,0,0
+0,0,4t,7e,0,0,0,am,0,0,0,0,0,4s,0,0
 0,0,4t,7d,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,7j,0,7k,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,7i,7g,7h,0,0,4s,0,0
+0,0,4t,8x,0,0,0,0,7j,0,7k,ap,ak,4s,0,0
+0,0,4t,0,0,0,0,0,7i,7g,7h,ao,al,4s,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -488,15 +488,15 @@ ROOM f
 0,0,0,0,0,0,4p,4q,4q,4r,0,0,0,0,0,0
 0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
 0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
-0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4p,4q,4q,4q,50,am,0,4z,4q,4q,4q,4r,0,0
+0,0,4t,0,0,0,0,0,0,ak,al,0,0,4s,0,0
+0,0,4t,0,0,0,0,an,am,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,62,61,64,62,61,64,62,61,64,0,4s,0,0
 0,0,4t,67,65,68,67,65,68,67,65,68,0,4s,0,0
 0,0,4t,0,66,0,0,66,0,0,66,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,an,0,0,0,0,0,0,0,ap,ao,4s,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -8653,7 +8653,7 @@ DLG 1n
 {
   - {item "arconovo"} == 1 ?
     A Arqueira aponta seu novo arco corajosamente em direção à Rainha Aranha{pg}Com suas habilidades de tecela, enrola a arma com sua seda, transformando o arco em uma harpa{pg}"Agora toque uma linda melodia para mim, humana" e assim a Arqueira aceita a missão{pg}A Arqueira toca uma linda música que encanta a Aranha e  criatura ajuda a Arqueira e seus amigos a saírem da caverna
-}{pg}{exit "ArchEnding" 0 0 "fade_w"}{pg}Devido ao uso errado do arco, a Arqueira descobriu um novo talento:{pg}Ela sabia tocar muito bem{pg}E não demorou muito para ela se apaixonar pelas próprias melodias{pg}Ela se tornou a mais renomada Barda do reino e todos dançam ao som da harpa da antiga Arqueira
+}{pg}{exit "ArchEnding" 0 0 "fade_w"}{pg}Devido ao uso errado do arco, a Arqueira descobriu um novo talento:{pg}Ela sabia tocar muito bem{pg}E não demorou muito para ela se apaixonar pelas próprias melodias{pg}Ela se tornou a mais renomada Barda do reino e todos dançam ao som da harpa da antiga Arqueira{pg}{exit "Ending bar" 0 0 "tunnel"}{pg}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
 """
 NAME sprite 1r dialog
 
