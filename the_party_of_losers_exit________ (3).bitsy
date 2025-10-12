@@ -5789,7 +5789,9 @@ SPR A
 01000010
 00111100
 00000000
-POS 5 1,0
+POS 1b 6,10
+ITM 4 1
+ITM 6 1
 
 SPR b
 00000000
@@ -8805,12 +8807,12 @@ A curandeira percebe que os minions do rei goblin estão feridos, então decide 
   - {item "HealerDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
-
-    }{
-      - {item "MageDeath"} == 0 ?
         {
-          - {item "ArchDeath"} == 1 ?
-            {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "ArchDeath"} == 1 ?
+                {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
         }
     }
 }{
