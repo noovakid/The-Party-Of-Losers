@@ -8011,7 +8011,8 @@ DLG z
 """
 {
   - {item "Sword"} == 1 ?
-    "Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{pg}{exit "Mage Cave 3  (FencingWin)" 11 8 "fade_w"}Ele nao sabe exatamente como ele fez isso. Mas agiu como se soubesse.{pg}Após andar mais um pouco, o Mago encontrou a saída da caverna.{pg}{exit "Mage Ending" 0 0 "fade_w"}Após sua a ventura o Mago descobriu uma coisa:{pg}Ele era um Mago lamentável, mas um ótimo Guerreiro!{pg}Desde entao, o Mago treinou com sua espada e se tornou um guerreiro exemplar!
+    "Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{pg}{exit "Mage Cave 3  (FencingWin)" 11 8 "fade_w"}Ele nao sabe exatamente como ele fez isso. Mas agiu como se soubesse.{pg}Após andar mais um pouco, o Mago encontrou a saída da caverna.{pg}{exit "Mage Ending" 0 0 "fade_w"}Após sua a ventura o Mago descobriu uma coisa:{pg}Ele era um Mago lamentável, mas um ótimo Guerreiro!{pg}Desde entao, o Mago treinou com sua espada e se tornou um guerreiro exemplar!{exit "Ending bar" 0 0 "fade_w"}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades
+    {pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
   - {item "Sword"} == 0 ?
      "Enfrente-me se for capaz!" Grita o duelista.{pg}Após o grito de guerra, o duelista acerta o Mago com sua espada{item "MageDeath" 1}
 }{pg}{
