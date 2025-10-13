@@ -345,7 +345,7 @@ ROOM 17
 0,4t,0,0,0,0,0,8t,0,8u,0,0,0,0,4s,0
 0,4t,0,0,0,0,0,0,0,0,0,0,0,0,4s,0
 0,4t,0,0,0,0,8t,88,86,87,8u,0,0,0,4s,0
-0,4t,0,0,0,0,0,8s,0,8t,8u,0,0,0,4s,0
+0,4t,0,0,0,0,0,8s,89,8t,8u,0,0,0,4s,0
 0,4t,0,0,0,0,8s,8u,0,0,8s,0,0,0,4s,0
 0,4t,0,0,0,0,0,0,0,0,0,0,0,0,4s,0
 0,4t,0,0,0,0,0,0,0,0,0,0,0,0,4s,0
@@ -6343,6 +6343,48 @@ SPR 32
 DLG 2f
 POS 13 8,2
 
+SPR 33
+00111000
+01000100
+01000100
+00000100
+00011000
+00010000
+00000000
+00010000
+>
+00000000
+00011000
+00100100
+00000100
+00011000
+00010000
+00010000
+00000000
+DLG 2g
+POS 17 9,1
+
+SPR 34
+00111000
+01000100
+01000100
+00000100
+00011000
+00010000
+00000000
+00010000
+>
+00000000
+00011000
+00100100
+00000100
+00011000
+00010000
+00010000
+00000000
+DLG 2h
+POS 18 8,1
+
 SPR A
 00000000
 00111100
@@ -6954,7 +6996,6 @@ SPR 1s
 00100100
 01000011
 DLG 1r
-POS 17 8,8
 
 SPR 1t
 00000000
@@ -9706,6 +9747,14 @@ Indo ainda mais fundo na caverna, a Arqueira encontra um portao enorme e, ao lad
 {pg}
 """
 NAME sprite 32 dialog
+
+DLG 2g
+Ao centro da caverna, a Curandeira encontra uma arvore que, absolutamente ninguém sabe como ela cresceu lá{pg}Mas ela está lá, pacífica e com inspiraçao constante.{pg}Quem admira a paz que emana da árvore chega até pensar:{pg}"Mó paz"
+NAME sprite 33 dialog
+
+DLG 2h
+Ao caminhar mais fundo pela caverna, a Curandeira encontra dois homens morrendo. Mas, em vez de dizerem frases dramáticas tipo “cuide da minha família” ou “diga a ela que eu a amo”, eles estao... brigando pra ver quem morre primeiro.{pg}O motivo? Uma profecia rabiscada na parede diz: “Aquele que morrer primeiro, sai da sala.”{pg}E aparentemente, ninguém explicou pra eles como exatamente esse “sair da sala” funciona.{pg}A pergunta que nao quer calar: Quem a Curandeira irá salvar primeiro?
+NAME sprite 34 dialog
 
 VAR Morte
 0
