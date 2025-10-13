@@ -6150,22 +6150,22 @@ POS k 6,7
 
 SPR 20
 00000000
-00100000
-00100000
-00100000
-11111000
-00100010
-00100111
-00000010
+00011000
+00011000
+01111110
+01111110
+00011000
+00011000
+00000000
 >
+00011000
+00011000
+01111110
+01111110
+00011000
+00011000
 00000000
 00000000
-00000100
-00000100
-00001110
-01000100
-11100100
-01000000
 NAME Cura?
 DLG 1u
 POS 19 11,4
@@ -6322,6 +6322,27 @@ NAME BaúMentiroso
 DLG 2d
 POS b 12,8
 
+SPR 32
+00111000
+01000100
+01000100
+00000100
+00011000
+00010000
+00000000
+00010000
+>
+00000000
+00110000
+01001000
+00001000
+00011000
+00010000
+00010000
+00000000
+DLG 2f
+POS 13 8,2
+
 SPR A
 00000000
 00111100
@@ -6340,9 +6361,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 1b 6,10
-ITM 4 1
-ITM 6 1
+POS 12 7,2
 
 SPR b
 00000000
@@ -6814,6 +6833,16 @@ SPR 1i
 00010000
 00000000
 00010000
+>
+00000000
+00110000
+01001000
+00001000
+00011000
+00010000
+00010000
+00000000
+DLG 2e
 POS 12 8,2
 
 SPR 1j
@@ -9113,12 +9142,12 @@ DLG 1l
   - {item "ArchDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
-
-    }{
-      - {item "MageDeath"} == 0 ?
         {
-          - {item "HealerDeath"} == 1 ?
-            {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "HealerDeath"} == 1 ?
+                {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
         }
     }
 }{
@@ -9342,7 +9371,8 @@ NAME portasaida dialog
 
 DLG 1w
 """
-A curandeira percebe que os minions do rei goblin estão feridos, então decide se redimir do acidente curando a todos {pg}Porém... {rbw}Não surpreendentemente...{/rbw} ela erra o feitiço, e cria uma fumaça fedorenta ao redor da sala, irritando mais ainda os goblins, e dando um fim de vez na coitada da curandeira...{item "5" {{item "5"} + 1}}{
+A Curandeira decide sair da sala, deixando os homens meio mortos discutindo quem desmaiou de forma mais heróica.{pg}Mas, como dizia a antiga profecia (ou talvez só um bilhete malfeito na parede):
+“O primeiro a sair da sala morre.” E assim, a Arqueira descobriu do pior jeito possível que a profecia nao estava de brincadeira.{item "5" {{item "5"} + 1}}{
   - {item "HealerDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
@@ -9665,6 +9695,17 @@ O baú abre{pg}mas o Mago nota tarde demais{pg}dentes enormes e gosma escorrem d
 }
 """
 NAME BaúMentiroso
+
+DLG 2e
+A Arqueira entra na caverna e encontra uma sala aparentemente normal. Quer dizer... normal até demais.{pg}No centro, há um alvo estrategicamente colocado no lugar mais suspeito possível que com certeza nao é um mímico disfarçado (provavelmente).{pg}Ao lado, uma fogueira feita por aventureiros que claramente tiveram a mesma ideia brilhante que ela... e desapareceram misteriosamente logo depois.{pg}
+NAME sprite 1i dialog
+
+DLG 2f
+"""
+Indo ainda mais fundo na caverna, a Arqueira encontra um portao enorme e, ao lado dele, um papel.
+{pg}
+"""
+NAME sprite 32 dialog
 
 VAR Morte
 0
