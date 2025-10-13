@@ -6361,7 +6361,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 12 7,2
+POS 5 1,1
 
 SPR b
 00000000
@@ -9354,7 +9354,7 @@ Ao centro da caverna, a Curandeira encontra uma arvore que, absolutamente ningu�
 NAME Tree_Talk
 
 DLG 1s
-A curandeira fica curiosa com a botânica exótica da arvore da caverna{pg}Ao analisar os frutos da arvore, percebe que eles possuem propriedades medicinais, e decide guarda-las para depois{pg}Quando olha para trás, percebe a arvore despertando, era inicio de um julgamento, e estava decidido que ela iria passar para a próxima sala  {exit "Healer room 2" 7 1}
+A curandeira fica curiosa com a botânica exótica da arvore da caverna{pg}Ao analisar os frutos da arvore, percebe que eles possuem propriedades medicinais, e decide guarda-las para depois{pg}Quando olha para trás, percebe a arvore despertando, era inicio de um julgamento, e estava decidido que ela iria passar para a próxima sala  {exit "Healer room 2" 7 1 "tunnel"}
 NAME interact tree dialog
 
 DLG 1t
