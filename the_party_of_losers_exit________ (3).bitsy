@@ -450,7 +450,7 @@ ROOM c
 0,0,4t,0,0,0,0,0,5q,5u,0,0,0,0,0,0
 0,0,4t,0,0,0,0,0,5r,0,0,0,0,4p,3m,3m
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
-0,0,4t,0,0,at,at,as,aq,ar,0,0,0,4t,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -936,7 +936,7 @@ ROOM 1b
 0,0,4t,0,0,0,8i,8f,8h,0,62,61,64,90,0,7r
 0,0,4t,62,61,64,8k,8g,8j,0,67,65,68,90,0,7r
 0,0,4t,67,65,68,8n,8l,8m,0,0,66,0,90,0,7r
-0,0,4t,0,66,0,0,0,0,67,61,64,0,4s,7o,7p
+0,0,4t,0,66,0,0,0,0,62,61,64,0,4s,7o,7p
 0,0,4t,0,0,0,0,0,0,67,65,68,0,4s,0,0
 0,0,4u,5a,0,0,0,0,0,0,66,0,4w,4v,0,0
 0,0,0,4t,0,0,0,0,0,0,0,4s,0,0,0,0
@@ -7995,7 +7995,7 @@ DLG 15
   - {item "Grimório"} == 1 ?
     {
       - {item "MagicSword"} == 0 ?
-        "Opa, bom?" Pergunta o monstro{pg}"Por gentileza, poderia se afastar de mim? Não quero pegar nenhuma doença"{pg}...{pg}"Espera! Esse é aquele livro que uns caras legais usam pra curar as pessoas?"{pg}"Poderia me curar da minha gripe? Já estou com dor de cabeça!"{pg}O Guerreiro procura no Grimório folheira o grimório e encontra o capítulo "Cura para gripe de monstros que possuem um olho só perdidos dentro de uma caverna escura e suja"{pg}O Guerreiro {rbw}consegue{/rbw} lançar um feitiço que cura o monstro de sua gripe.{pg}A criatura, grata por sua ajuda, te guia para a saída da caverna e assim o Guerreiro consegue guiar seus amigos para fora da caverna!{pg}{exit "Warrior Ending" 0 0 "fade_w"}O Guerreiro descobriu algo sobre si: {pg}Talvez ele nunca tenha sido um bom lutador, porque durante esse tempo todo ele era um ótimo cuidador{pg}Desde então o Guerreiro se dedicou a curar os mais necessitados com sua recém-aprendida magia!{pg}{exit "Ending bar" 0 0 "tunnel"}Quando saíram da caverna, os aventureiros perceberam que nao erma mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
+        "Opa, bom?" Pergunta o monstro{pg}"Por gentileza, poderia se afastar de mim? Não quero pegar nenhuma doença"{pg}...{pg}"Espera! Esse é aquele livro que uns caras legais usam pra curar as pessoas?"{pg}"Poderia me curar da minha gripe? Já estou com dor de cabeça!"{pg}O Guerreiro procura no Grimório folheira o grimório e encontra o capítulo "Cura para gripe de monstros que possuem um olho só perdidos dentro de uma caverna escura e suja"{pg}O Guerreiro {rbw}consegue{/rbw} lançar um feitiço que cura o monstro de sua gripe.{pg}A criatura, grata por sua ajuda, te guia para a saída da caverna e assim o Guerreiro consegue guiar seus amigos para fora da caverna!{pg}{exit "Warrior Ending" 0 0 "fade_w"}O Guerreiro descobriu algo sobre si: {pg}Talvez ele nunca tenha sido um bom lutador, porque durante esse tempo todo ele era um ótimo cuidador{pg}Desde então o Guerreiro se dedicou a curar os mais necessitados com sua recém-aprendida magia!{pg}{exit "Ending bar" 0 0 "tunnel"}Quando saíram da caverna, os aventureiros perceberam que nao erma mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}{exit "Dead Princess" 15 13 "tunnel"}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
     }
 }
 """
@@ -8377,7 +8377,16 @@ DLG d
 NAME CaveMagePassed1 dialog
 
 DLG e
-{item "Sword" {{item "Sword"} + 1}}Obteve: {wvy}Espada do Guerreiro egocentrico{/wvy}
+"""
+{
+  - {item "Sword"} == 0 ?
+    {item "Sword" {{item "Sword"} + 1}}Obteve: {wvy}Espada do Guerreiro egocentrico{/wvy}
+  - {item "0"} == 1 ?
+     
+  - {item "Sword"} == 1 ?
+     O Mago já pegou a espada!{item "Sword" 1}
+}
+"""
 NAME SwordChest dialog
 
 DLG f
@@ -8713,8 +8722,8 @@ DLG z
 """
 {
   - {item "Sword"} == 1 ?
-    "Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{pg}{exit "Mage Cave 3  (FencingWin)" 11 8 "fade_w"}Ele nao sabe exatamente como ele fez isso. Mas agiu como se soubesse.{pg}Após andar mais um pouco, o Mago encontrou a saída da caverna.{pg}{exit "Mage Ending" 0 0 "fade_w"}Após sua a ventura o Mago descobriu uma coisa:{pg}Ele era um Mago lamentável, mas um ótimo Guerreiro!{pg}Desde entao, o Mago treinou com sua espada e se tornou um guerreiro exemplar!{exit "Ending bar" 0 0 "fade_w"}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades
-    {pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
+    "Enfrente-me se... NAO! ESPERA!" O Mago, {wvy}incrivelmente{/wvy}, acerta o duelista com sua espada com uma estranha maestria{pg}{exit "Mage Cave 3  (FencingWin)" 11 8 "fade_w"}Ele nao sabe exatamente como ele fez isso. Mas agiu como se soubesse.{pg}Após andar mais um pouco, o Mago encontrou a saída da caverna.{pg}{exit "Mage Ending" 0 0 "fade_w"}{pg}Após sua a ventura o Mago descobriu uma coisa:{pg}Ele era um Mago lamentável, mas um ótimo Guerreiro!{pg}Desde entao, o Mago treinou com sua espada e se tornou um guerreiro exemplar!{pg}{exit "Ending bar" 0 0 "fade_w"}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades
+    {pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}{exit "Dead Princess" 15 13 "tunnel"}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
   - {item "Sword"} == 0 ?
      "Enfrente-me se for capaz!" Grita o duelista.{pg}Após o grito de guerra, o duelista acerta o Mago com sua espada{item "MageDeath" 1}{pal "2"}O matando de vez
 }{pg}{
@@ -9276,7 +9285,7 @@ DLG 1n
 {
   - {item "arconovo"} == 1 ?
     A Arqueira aponta seu novo arco corajosamente em direção à Rainha Aranha{pg}Com suas habilidades de tecela, enrola a arma com sua seda, transformando o arco em uma harpa{pg}"Agora toque uma linda melodia para mim, humana" e assim a Arqueira aceita a missão{pg}A Arqueira toca uma linda música que encanta a Aranha e  criatura ajuda a Arqueira e seus amigos a saírem da caverna
-}{pg}{exit "ArchEnding" 0 0 "fade_w"}{pg}Devido ao uso errado do arco, a Arqueira descobriu um novo talento:{pg}Ela sabia tocar muito bem{pg}E não demorou muito para ela se apaixonar pelas próprias melodias{pg}Ela se tornou a mais renomada Barda do reino e todos dançam ao som da harpa da antiga Arqueira{pg}{exit "Ending bar" 0 0 "tunnel"}{pg}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
+}{pg}{exit "ArchEnding" 0 0 "fade_w"}{pg}Devido ao uso errado do arco, a Arqueira descobriu um novo talento:{pg}Ela sabia tocar muito bem{pg}E não demorou muito para ela se apaixonar pelas próprias melodias{pg}Ela se tornou a mais renomada Barda do reino e todos dançam ao som da harpa da antiga Arqueira{pg}{exit "Ending bar" 0 0 "tunnel"}{pg}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!{pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}{exit "Dead Princess" 15 13 "tunnel"}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
 """
 NAME sprite 1r dialog
 
@@ -9518,7 +9527,10 @@ A curandeira se aproxima do Goblin Rei chorando que nem uma criança birrenta po
 NAME reigoblinconversa dialog
 
 DLG 1y
-A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}Uma missão que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.{exit "Healer Ending" 0 0 "fade_w"}
+"""
+A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}Uma missão que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.{exit "Healer Ending" 0 0 "fade_w"}{pg}Depois de tanto se perguntar por que ela matava tanta gente sem querer a Curandeira percebeu: {pg}Os mortos são mais úteis!{pg}Desde entao, a Curandeira se descobriu como uma necromante invencível{pg}Se tornando assim, a maior do reino!{pg}{exit "Ending bar" 0 0 "fade_b"}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!
+{pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}{exit "Dead Princess" 15 13 "tunnel"}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
+"""
 NAME ATAQUEgolins dialog
 
 DLG 1z
