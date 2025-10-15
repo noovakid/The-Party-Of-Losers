@@ -337,7 +337,7 @@ PAL 0
 AVA 1f
 
 ROOM 17
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,5l,0,0,0,5l,0,0,0,0,0
 0,4p,4q,4q,4q,4q,4q,0,0,0,4q,4q,4q,4q,4r,0
 0,4t,0,0,0,0,0,8t,0,0,0,0,0,0,4s,0
 0,4t,0,0,0,8s,0,0,0,0,8t,0,0,0,4s,0
@@ -424,11 +424,11 @@ ROOM b
 0,0,0,0,0,0,4t,0,0,4s,0,0,0,0,0,0
 0,0,4p,4q,4q,4q,50,0,0,4z,4q,4q,4q,4r,0,0
 0,0,4t,0,ak,al,0,am,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,an,0,0,0,0,0,0,4s,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,0,an,0,am,0,0,0,0,0,0,0,4s,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,5l,4t,0,0,0,an,0,0,0,0,0,0,4s,0,0
+0,5l,0,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,5l,0,an,0,am,0,0,0,0,0,0,0,4s,0,0
+0,5l,5l,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,5l,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,85,0,0,0,0,0,0,ap,ao,0,4s,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
@@ -445,11 +445,11 @@ ROOM c
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,3m,3m
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,5l,5l
 0,0,4t,0,0,0,0,0,5p,0,0,0,0,0,0,0
 0,0,4t,0,0,0,0,0,5q,5u,0,0,0,0,0,0
 0,0,4t,0,0,0,0,0,5r,0,0,0,0,4p,3m,3m
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,5l,5l
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
@@ -467,11 +467,11 @@ ROOM e
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,3m,3m
+0,0,4t,0,0,0,0,0,0,0,0,0,0,0,5l,5l
 0,0,4t,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,4t,0,0,0,0,60,5y,5x,5w,0,0,0,0,0
 0,0,4t,0,0,0,0,0,5z,0,0,0,0,4p,3m,3m
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,5l,5l
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4t,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
@@ -495,7 +495,7 @@ ROOM f
 0,0,4t,62,61,64,62,61,64,62,61,64,0,4s,0,0
 0,0,4t,67,65,68,67,65,68,67,65,68,0,4s,0,0
 0,0,4t,0,66,0,0,66,0,0,66,0,0,4s,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,c8,4s,0,0
 0,0,4t,an,0,0,0,0,0,0,0,ap,ao,4s,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -530,12 +530,12 @@ ROOM h
 0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
 0,0,4t,0,0,0,0,0,0,aw,0,0,0,4s,0,0
 0,0,4t,0,0,aw,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,au,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,au,0,0,0,0,0,0,0,0,4s,5l,5l
 0,0,4t,0,6s,0,0,0,0,an,0,0,0,0,0,0
 0,0,4t,6o,6k,6r,0,0,0,0,0,am,0,0,0,0
 0,0,4t,6n,6l,6q,0,0,0,0,an,0,an,am,0,0
 0,0,4t,0,6m,0,0,0,0,0,0,0,0,0,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,5l,5l
 0,0,4t,0,aw,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,au,0,0,0,au,0,0,0,4s,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
@@ -592,12 +592,12 @@ ROOM k
 0,0,4p,4q,4q,4q,4q,4q,4q,4q,4q,4q,4q,4r,0,0
 0,0,4t,0,0,0,0,0,0,aw,0,0,0,4s,0,0
 0,0,4t,0,0,aw,0,0,0,0,0,0,0,4s,0,0
-0,0,4t,0,au,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,au,0,0,0,0,0,0,0,0,4s,5l,5l
 0,0,4t,0,6s,0,0,0,0,an,0,0,0,0,0,0
 0,0,4t,6o,6k,6r,0,0,0,0,0,am,0,0,0,0
 0,0,4t,6n,6l,6q,0,0,0,0,an,0,an,am,0,0
 0,0,4t,0,6m,0,0,0,0,0,0,0,0,0,0,0
-0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
+0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,5l,5l
 0,0,4t,0,aw,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,au,0,0,0,au,0,ay,0,4s,0,0
 0,0,4u,4w,4w,4w,4w,4w,4w,4w,4w,4w,4w,4v,0,0
@@ -882,8 +882,8 @@ ROOM y
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4t,0,0,0,0,0,0,0,0,0,0,4s,0,0
 0,0,4u,4w,4w,4w,0,0,0,0,4w,4w,4w,4v,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,5l,0,0,0,0,5l,0,0,0,0,0
+0,0,0,0,0,5l,0,0,0,0,5l,0,0,0,0,0
 NAME Warrior Cave 3
 ITM 8 10,9
 PAL 0
@@ -6001,6 +6001,25 @@ TIL c7
 11111111
 NAME ocloud4
 
+TIL c8
+00000000
+00011000
+00111100
+01011010
+01100110
+00111100
+00111100
+00100100
+>
+00000000
+00000000
+00011000
+00111100
+01011010
+01100110
+00111100
+01111110
+
 SPR 10
 00111000
 01000100
@@ -7584,7 +7603,7 @@ DLG 4
 NAME Story Diolog 2
 
 DLG 5
- Um grupo de antigos amigos e inexperientes aventureiros ouviu sobre a proposta...{pg}"Essa é a nossa chance!" Disse o Guerreiro dispensado por ser gordo demais{pg}"Nao temos habilidades para isso!" Disse o mago que nunca conseguiu soltar uma magia{pg}"Eu tenho medo dessas coisas" Disse a arqueira que nao sabia usar seu arco{pg}"E também, nao sabemos dos perigos envolvidos nisso!" Disse a curandeira que nunca curou ninguém{pg}"Se a gente se esforçar bastante, nós conseguiremos provar nosso valor pro reino!!{pg}Depois de um discurso motivador, o Guerreiro dispensado conseguiu convencer seus amigos e eles decidiram aceitar a proposta.{pg}{exit "3" 4 1 "tunnel"}
+ Um grupo de antigos amigos e inexperientes aventureiros ouviu sobre a proposta...{pg}"Essa é a nossa chance!" Disse o Guerreiro dispensado por ser gordo demais{pg}"Nao temos habilidades para isso!" Disse o mago que nunca conseguiu soltar uma magia{pg}"Eu tenho medo dessas coisas" Disse a arqueira que nao sabia usar seu arco{pg}"E também, nao sabemos dos perigos envolvidos nisso!" Disse a curandeira que nunca curou ninguém{pg}"Se a gente se esforçar bastante, nós conseguiremos provar nosso valor pro reino!!"{pg}Depois de um discurso motivador, o Guerreiro dispensado conseguiu convencer seus amigos e eles decidiram aceitar a proposta.{pg}{exit "3" 4 1 "tunnel"}
 NAME Story Diolog 3
 
 DLG 6
@@ -7601,7 +7620,7 @@ NAME MageChar dialog
 
 DLG 9
 """
-Você escolheu atacar o Leão!{pg}O mago ergue as mãos dramaticamente, grita o nome de uma magia inventada na hora e… nada acontece. O leão só olha, confuso. Então, num ato desesperado, o mago pega uma pedrinha do chão e joga no leão. A pedra quica na juba dele sem causar nenhum dano.{pg}Mas o leão se sente ofendido e morde ferozmente o Mago{pal "2"}{pal "2"}O Mago morreu{pg}Agora outro aventureiro inexperiente deve ser o líder{item "3" {{item "3"} + 1}}{pg}{
+Você escolheu atacar o Leao!{pg}O mago ergue as maos dramaticamente, grita o nome de uma magia inventada na hora e… nada acontece. O leao só olha, confuso. Entao, num ato desesperado, o mago pega uma pedrinha do chao e joga no leao. A pedra quica na juba dele sem causar nenhum dano.{pg}Mas o leao se sente ofendido e morde ferozmente o Mago{pal "2"}O Mago morreu{pg}Agora outro aventureiro inexperiente deve ser o líder{item "3" {{item "3"} + 1}}{pg}{
   - {item "MageDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
@@ -7703,7 +7722,7 @@ NAME Attack_Mage1 dialog
 
 DLG 10
 """
-O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado.{pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{item "4" {{item "4"} + 1}}{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado… {wvy}principalmente bater em você.{/wvy}{pg}{pal "2"}{wvy}principalmente bater em você.{/wvy}{pg}{
+O Guerreiro tenta puxar papo, dizendo que também já foi rejeitado e entende a dor de nao ser respeitado.{pg}Os goblins escutam, cochicham entre si e começam a rir cada vez mais alto.{pg}O guerreiro se sente confuso, quase acreditando que eles estao virando amigos… até que, no meio da risada, os goblins decidem que vai ser ainda mais engraçado usar ele como alvo de prática de fundas e pedrinhas.{item "4" {{item "4"} + 1}}{pg}Você tentou fazer amizade, mas descobriu da pior forma que goblins acham tudo engraçado...mr{pg}{pal "2"}{wvy}principalmente bater em você.{/wvy}{pg}{
   - {item "WarriorDeath"} == 1 ?
     {
       - {item "MageDeath"} == 0 ?
@@ -8390,7 +8409,7 @@ NAME Warrior_Goblin_1_Attack
 
 DLG c
 """
-Espada: Escolhe atacar
+Quando chegou na Caverna, o Mago viu um leao! Tranquilamente parado como se estivesse falando: "Olhe para mim, sou um leao de boas na lagoa!"{pg}Espada: Escolhe atacar
 Balaozinho: Escolhe convesar/Interagir
 """
 NAME sprite q dialog
