@@ -6215,7 +6215,7 @@ SPR 23
 01100000
 10000000
 NAME conversarhealer
-DLG 1w
+DLG 2i
 POS 1b 8,7
 
 SPR 24
@@ -6403,7 +6403,7 @@ SPR A
 01000010
 00111100
 00000000
-POS 1 4,0
+POS 1b 7,9
 
 SPR b
 00000000
@@ -7049,7 +7049,7 @@ SPR 1v
 00100000
 00000000
 NAME DeadMan2
-DLG 1u
+DLG 2j
 POS 18 10,6
 
 SPR 1w
@@ -9528,7 +9528,7 @@ NAME reigoblinconversa dialog
 
 DLG 1y
 """
-A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}Uma missão que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.{exit "Healer Ending" 0 0 "fade_w"}{pg}Depois de tanto se perguntar por que ela matava tanta gente sem querer a Curandeira percebeu: {pg}Os mortos são mais úteis!{pg}Desde entao, a Curandeira se descobriu como uma necromante invencível{pg}Se tornando assim, a maior do reino!{pg}{exit "Ending bar" 0 0 "fade_b"}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!
+A curandeira decide que nem sempre curar os outros é vantajoso, as vezes, a melhor solução para o problema de algumas pessoas (ou goblins) é fazendo com que elas parem de reclamar{pg}Então, a curandeira manda seus zumbis ao ataque, destruindo tudo e todos impiedosamente, o rei fica sem escolha a não ser virar comida de zumbi{pg}A curandeira então trás os goblins "de volta à vida", e força os seus novos zumbis goblins à tira-la dessa maldita caverna.{pg}{exit "Healer Ending" 0 0 "fade_w"}Uma lição que a ex-curandeira aprendeu, foi que deixar com que os outros façam as coisas por você é bem mais divertido do que ser o suporte do grupo.{pg}Depois de tanto se perguntar por que ela matava tanta gente sem querer a Curandeira percebeu: {pg}Os mortos são mais úteis!{pg}Desde entao, a Curandeira se descobriu como uma necromante invencível{pg}Se tornando assim, a maior do reino!{pg}{exit "Ending bar" 0 0 "fade_b"}Quando saíram da caverna, os aventureiros perceberam que nao eram mais os mesmos{pg}Já nao eram {wvy}tao{/wvy} perdedores assim!
 {pg}Descobriram que eram ótimos com suas novas habilidades{pg}Entao, quando sairam da caverna, foram para uma {rbw}taverna{/rbw} comemorar a conquista {pg}{exit "Dead Princess" 15 13 "tunnel"}Mas eles acabaram esquecendo da princesa e ela acabou morrendo{pg}Fim!{pg}{end}
 """
 NAME ATAQUEgolins dialog
@@ -9767,6 +9767,112 @@ NAME sprite 33 dialog
 DLG 2h
 Ao caminhar mais fundo pela caverna, a Curandeira encontra dois homens morrendo. Mas, em vez de dizerem frases dramáticas tipo “cuide da minha família” ou “diga a ela que eu a amo”, eles estao... brigando pra ver quem morre primeiro.{pg}O motivo? Uma profecia rabiscada na parede diz: “Aquele que morrer primeiro, sai da sala.”{pg}E aparentemente, ninguém explicou pra eles como exatamente esse “sair da sala” funciona.{pg}A pergunta que nao quer calar: Quem a Curandeira irá salvar primeiro?
 NAME sprite 34 dialog
+
+DLG 2i
+"""
+A Curandeira percebe que os minions goblins tem feridas ao redor de seus corpos. Então decide que vai se redimir de seus erros e vai provar seu valor como uma curandeira{pg}Então ela acessa a pagina que cria uma fumaça curativa, só que ela confunde a fala do feitiço com a {wvy}Fumaça flatulenta...{/wvy}, e solta um gás fedido que irrita mais ainda os goblins, sobrando então para a pobre curandeira...{item "5" {{item "5"} + 1}}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "ArchDeath"} == 0 ?
+                {exit "Character Select (Menos Curandeira)  " 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "ArchDeath"} == 1 ?
+                {exit "Character Select (Menos Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "ArchDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 0 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "ArchDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "ArchDeath"} == 0 ?
+                {exit "Character Select (Menos Guerreira, Curandeira) copy 2" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 0 ?
+            {
+              - {item "ArchDeath"} == 1 ?
+                {exit "Character Select (Menos Guerreira, Arqueira, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "ArchDeath"} == 0 ?
+                {exit "Character Select (Menos Mago, Guerreiro, Curandeira)" 0 0 "fade_b"}
+            }
+        }
+    }
+}{
+  - {item "HealerDeath"} == 1 ?
+    {
+      - {item "WarriorDeath"} == 1 ?
+        {
+          - {item "MageDeath"} == 1 ?
+            {
+              - {item "ArchDeath"} == 1 ?
+                {exit "Character Select (Menos Mago, guerreiro) " 0 0 "fade_b"}
+            }
+        }
+    }
+}
+"""
+NAME Healer_talk_goblin
+
+DLG 2j
+{wvy}Uuuuh...{/wvy}
+NAME Cara_lascado
 
 VAR Morte
 0
