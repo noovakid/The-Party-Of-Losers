@@ -1010,6 +1010,7 @@ b8,0,b7,bc,c3,ba,b9,ba,b9,ba,c2,bb,0,0,b7,0
 0,0,0,b8,0,b7,0,0,0,0,b8,0,b7,0,0,0
 NAME Dead Princess
 PAL 0
+AVA 2v
 
 TIL 10
 01111001
@@ -6340,7 +6341,7 @@ SPR 32
 00010000
 00010000
 00000000
-DLG 2f
+DLG 2l
 POS 13 8,2
 
 SPR 33
@@ -6384,6 +6385,28 @@ SPR 34
 00000000
 DLG 2h
 POS 18 8,1
+
+SPR 35
+00111000
+01000100
+01000100
+00000100
+00011000
+00010000
+00000000
+00010000
+>
+00000000
+00011000
+00100100
+00000100
+00011000
+00010000
+00010000
+00000000
+NAME AranhaInfo
+DLG 2k
+POS 14 8,2
 
 SPR A
 00000000
@@ -9422,7 +9445,7 @@ NAME portasaida dialog
 DLG 1w
 """
 A Curandeira decide sair da sala, deixando os homens meio mortos discutindo quem desmaiou de forma mais heróica.{pg}Mas, como dizia a antiga profecia (ou talvez só um bilhete malfeito na parede):
-“O primeiro a sair da sala morre.” E assim, a Arqueira descobriu do pior jeito possível que a profecia nao estava de brincadeira.{item "5" {{item "5"} + 1}}{
+“O primeiro a sair da sala morre.” E assim, a Curandeira descobriu do pior jeito possível que a profecia nao estava de brincadeira.{item "5" {{item "5"} + 1}}{
   - {item "HealerDeath"} == 1 ?
     {
       - {item "WarriorDeath"} == 0 ?
@@ -9754,10 +9777,7 @@ A Arqueira entra na caverna e encontra uma sala aparentemente normal. Quer dizer
 NAME sprite 1i dialog
 
 DLG 2f
-"""
-Indo ainda mais fundo na caverna, a Arqueira encontra um portao enorme e, ao lado dele, um papel.
 {pg}
-"""
 NAME sprite 32 dialog
 
 DLG 2g
@@ -9873,6 +9893,24 @@ NAME Healer_talk_goblin
 DLG 2j
 {wvy}Uuuuh...{/wvy}
 NAME Cara_lascado
+
+DLG 2k
+"""
+Seguindo pela caverna, a Arqueira dá de cara com a temível Rainha Aranha! {pg}E olha só, bem ao lado dela, dois itens: um saco de moedas (claramente, um dos muitos espalhados nessa parte da caverna, essa aranha provavelmente tem um MBA em finanças ocultas){pg}e um arco e flecha novo! (Quer dizer, não tão novo... parece até que veio de uma liquidação de armas usadas){pg}Escolha o que fazer
+
+Saco de moedas: Pega o saco de moedas
+Arco e flecha: pega o arco e flecha
+"""
+NAME AranhaInfo dialog
+
+DLG 2l
+"""
+ Ainda mais fundo caverna a Arqueira se depara com um portão, placas e um papel próximo.{pg}É possível ver que alguém, muito burro, deixou cair um saco de moedas em uma das placas, mas no outro lado alguém parece ter decifrado a ordem correta de onde pisar nas placas!{pg}Escolha o que fazer
+
+Flecha: atira no saco de moedas 
+Placas: Pisa nas placas
+"""
+NAME FlechadaInfo
 
 VAR Morte
 0
